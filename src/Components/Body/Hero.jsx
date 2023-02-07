@@ -11,8 +11,8 @@ import Image6 from "../../assets/Hero-Images/IMG_5060.JPG";
 const Hero = () => {
   return (
     <section id="home" className="">
-      <Carousel showStatus={false} showThumbs={false}>
-        <div className="grid place-items-center h-[90vh]">
+      <Carousel showStatus={false} showThumbs={false} infiniteLoop={true}>
+        <div className="grid place-items-center h-[70vh]">
           <img
             src={Image1}
             // src="https://drive.google.com/thumbnail?id=1Ugp819rHnCnMXWZ3zW9mbXeKnhjNvIup"
@@ -21,7 +21,7 @@ const Hero = () => {
           />
           {/* <p className="legend">Legend 1</p> */}
         </div>
-        <div className="grid place-items-center h-[90vh]">
+        <div className="grid place-items-center h-[70vh]">
           <img
             src={Image2}
             // src="https://drive.google.com/thumbnail?id=169vANTWWlaSbJkwsV5YpJS30ht3coDTe"
@@ -30,7 +30,7 @@ const Hero = () => {
           />
           {/* <p className="legend">Legend 2</p> */}
         </div>
-        <div className="grid place-items-center h-[90vh]">
+        <div className="grid place-items-center h-[70vh]">
           <img
             src={Image3}
             // src="https://drive.google.com/thumbnail?id=11fHf2H2Vq9NRt26uny8uqGfSeeXyifgr"
@@ -39,7 +39,7 @@ const Hero = () => {
           />
           {/* <p className="legend">Legend 3</p> */}
         </div>
-        <div className="grid place-items-center h-[90vh]">
+        <div className="grid place-items-center h-[70vh]">
           <img
             src={Image4}
             // src="https://drive.google.com/thumbnail?id=1glv-_WqRrMydLjFS8xRk5KOYuQS1G0fy"
@@ -48,7 +48,7 @@ const Hero = () => {
           />
           {/* <p className="legend">Legend 3</p> */}
         </div>
-        <div className="grid place-items-center h-[90vh]">
+        <div className="grid place-items-center h-[70vh]">
           <img
             src={Image5}
             // src="https://drive.google.com/thumbnail?id=1glv-_WqRrMydLjFS8xRk5KOYuQS1G0fy"
@@ -57,7 +57,7 @@ const Hero = () => {
           />
           {/* <p className="legend">Legend 3</p> */}
         </div>
-        <div className="grid place-items-center h-[90vh]">
+        <div className="grid place-items-center h-[70vh]">
           <img
             src={Image6}
             // src="https://drive.google.com/thumbnail?id=1glv-_WqRrMydLjFS8xRk5KOYuQS1G0fy"
