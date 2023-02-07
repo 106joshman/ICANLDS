@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-scroll";
-import { Logo } from "../logo";
+import { Logo } from "../Logo";
 
 const Footer = () => {
   return (

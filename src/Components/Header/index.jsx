@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Link, animateScroll as scroll } from "react-scroll";
 // import { Link } from "react-router-dom";
-import { Logo } from "../logo";
+import { Logo } from "../Logo";
 
 const Navbar = () => {
   const [show, setShow] = useState(false);
