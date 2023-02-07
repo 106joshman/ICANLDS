@@ -1,10 +1,12 @@
+import Hamburger from "hamburger-react";
 import React, { useState, useEffect } from "react";
 import { Link, animateScroll as scroll } from "react-scroll";
 // import { Link } from "react-router-dom";
 import { Logo } from "../Logo";
+import MobileNav from "./MobileNav";
 
 const Navbar = () => {
-  const [show, setShow] = useState(false);
+  const [isOpen, setOpen] = useState(false);
   const [navColor, setnavColor] = useState("transparent");
   const [textColor, setTextColor] = useState("black");
 
@@ -27,6 +29,7 @@ const Navbar = () => {
     { id: 0, name: "Gallery", path: "/" },
     { id: 0, name: "Contact", path: "contact" },
   ];
+
   return (
     <>
       <nav
@@ -47,21 +50,30 @@ const Navbar = () => {
         <div className="flex order-2">
           <button
             type="button"
-            className="text-white bg-blue-700 hover:bg-blue-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-3 md:mr-0 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+            className="text-white bg-blue-700 hover:bg-blue-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-3 lg:mr-0 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
             data-bs-toggle="modal"
             data-bs-target="#staticBackdrop"
           >
             Membership
           </button>
 
-          <button
+          <div className="lg:hidden">
+            <Hamburger
+              color="#6b7280"
+              label="Show menu"
+              backgroundColor='gray'
+              distance="md"
+              rounded
+              hideOutline={false}
+              size={30}
+              toggled={isOpen}
+              toggle={setOpen}
+            />
+          </div>
+          {/* <button
             type="button"
-            class="inline-flex items-center p-2 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarSupportedContent1"
-            aria-controls="navbarSupportedContent"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
+            class="inline-flex items-center p-2 text-sm text-gray-500 rounded-lg lg:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+            onClick={handleMobileMenu}
           >
             <span class="sr-only">Open main menu</span>
             <svg
@@ -78,14 +90,11 @@ const Navbar = () => {
                 clip-rule="evenodd"
               ></path>
             </svg>
-          </button>
+          </button> */}
         </div>
 
-        <div
-          className="collapse navbar-collapse navLinks md:order-1 w-full md:block md:w-auto"
-          id="navbarSupportedContent1"
-        >
-          <ul className="flex flex-col p-4 mt-4 justify-between md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium">
+        <div className="navLinks md:order-1 w-full md:block md:w-auto">
+          <ul className="hidden lg:flex flex-col p-4 mt-4 justify-between md:flex-row md:space-x-8 rounded-md md:mt-0 md:text-sm md:font-medium">
             {navLinks.map((navItems, index) => {
               return (
                 <li
@@ -197,6 +206,7 @@ const Navbar = () => {
           </div>
         </div>
       </div>
+      {!isOpen && <MobileNav navLinks={navLinks} />}
     </>
   );
 };

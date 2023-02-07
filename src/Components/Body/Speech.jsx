@@ -46,19 +46,7 @@ const Speech = () => {
             debitis molestias optio aspernatur saepe tempora quibusdam porro
             cupiditate voluptate! Provident, cumque sequi debitis cum enim, quia
             quo sed rem nisi neque magni. Cumque exercitationem quia molestias?
-            Corrupti iure natus laborum? Quam, inventore mollitia. Consequuntur
-            aliquam voluptate earum eos libero soluta! Ad harum delectus,
-            ratione iusto quos voluptatem illo, ab necessitatibus consectetur
-            laborum ipsum similique amet non? Ipsam, inventore. Accusantium
-            debitis rerum temporibus architecto tenetur, dignissimos eveniet
-            nostrum sequi veritatis totam, deleniti, eaque mollitia libero
-            explicabo saepe hic dolore vel. Accusantium recusandae placeat
-            veritatis alias explicabo dicta quasi a neque quas magni dolorem
-            quia eum molestiae enim magnam consectetur, blanditiis in nam
-            incidunt autem dolore. Alias odit numquam officiis nesciunt magnam
-            neque tempore reiciendis, optio ullam molestias modi harum molestiae
-            quidem doloribus, omnis fugiat tempora, iusto voluptatibus. Saepe
-            accusantium dolore ipsa ea autem placeat at sequi vitae voluptate?
+            Corrupti iure natus laborum? Quam, inventore mollitia.
           </p>
         </div>
       </div>
