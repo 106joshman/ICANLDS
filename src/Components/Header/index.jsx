@@ -206,7 +206,7 @@ const Navbar = () => {
           </div>
         </div>
       </div>
-      {!isOpen && <MobileNav navLinks={navLinks} />}
+      {isOpen && <MobileNav navLinks={navLinks} />}
     </>
   );
 };
