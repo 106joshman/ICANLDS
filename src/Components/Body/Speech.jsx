@@ -14,7 +14,7 @@ const Speech = () => {
             alt=""
             srcset=""
           />
-          <p className="flex flex-col md:left-36 lg:left-0 -top-20 ml-2.5 w-[350px] relative">
+          <p className="flex flex-col md:left-36 lg:left-0 -top-20 ml-2.5 w-[350px] text-white relative">
             <span className="text-3xl font-semibold">Alesta Wilcox, FCA</span>
             <span className="text-base font-bold">20th Chairman</span>
           </p>
