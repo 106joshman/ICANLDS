@@ -1,5 +1,5 @@
 import React from "react";
-import chairman from "../../assets/Exco/Alesta Wilcox.jpg";
+import chairman from "../../assets/Exco/AlestaWilcox.jpg";
 const Speech = () => {
   return (
     <section className="lg:h-100vh] relative">

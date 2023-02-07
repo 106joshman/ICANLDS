@@ -106,7 +106,7 @@ const Footer = () => {
             <div className="flex items-center">
               <Link
                 to="home"
-                activeClass="active"
+                activeclassname="active"
                 spy={true}
                 smooth={true}
                 offset={-70}
@@ -120,12 +120,12 @@ const Footer = () => {
             </p>
           </div>
 
-          <div class="">
-            <h6 class="font-medium mb-2 uppercase flex justify-ceter md:justify-start">
+          <div className="">
+            <h6 className="font-medium mb-2 uppercase flex justify-ceter md:justify-start">
               How to Join icanlds
             </h6>
 
-            <p class="mb-4 text-start">
+            <p className="mb-4 text-start">
               Thank you for showing interest in joing ICAN Lagos & Districty
               Society, to continue kindly click on the mambership button in the
               top bar 🙂 👍🏾

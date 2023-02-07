@@ -1,8 +1,8 @@
 import React from "react";
-import { Chairman } from "../../assets/Exco/AlestaWilcox.jpg";
-import { GenSec } from "../../assets/Exco/ToyinOgunlowo.jpg";
+import Chairman from "../../assets/Exco/AlestaWilcox.jpg";
+import GenSec from "../../assets/Exco/ToyinOgunlowo.jpg";
 
-export default function Excos() {
+const Excos = () => {
   return (
     <div className="bg-[#cde7f7]">
       <div className="container px-6 mx-auto ">
@@ -186,4 +186,6 @@ export default function Excos() {
       </div>
     </div>
   );
-}
+};
+
+export default Excos;
