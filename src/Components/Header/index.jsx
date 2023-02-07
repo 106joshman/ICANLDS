@@ -44,7 +44,7 @@ const Navbar = () => {
           </Link>
         </div>
 
-        <div className="flex md:order-2">
+        <div className="order-2">
           <button
             type="button"
             className="text-white bg-blue-700 hover:bg-blue-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-3 md:mr-0 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
@@ -56,7 +56,7 @@ const Navbar = () => {
         </div>
 
         <div className="navLinks md:order-1 w-full md:block md:w-auto">
-          <ul className="hidden md:flex flex-col p-4 mt-4 justify-between md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium">
+          <ul className="hidden lg:flex flex-col p-4 mt-4 justify-between md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium">
             {navLinks.map((navItems, index) => {
               return (
                 <li

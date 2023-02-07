@@ -3,7 +3,7 @@ import ChairMan from "../../assets/Exco/AlestaWIlcox.jpg";
 const Speech = () => {
   return (
     <section className="lg:h-100vh] relative">
-      Chairman's Speech
+      {/* Chairman's Speech */}
       <div className="flex flex-col lg:flex-row justify-between p-6 md:p-10">
         <div className="image">
           <img

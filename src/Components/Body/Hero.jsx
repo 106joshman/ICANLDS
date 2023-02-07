@@ -1,6 +1,12 @@
 import React from "react";
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import { Carousel } from "react-responsive-carousel";
+import Image1 from "../../assets/Hero-Images/IMG_5069.JPG";
+import Image2 from "../../assets/Hero-Images/IMG_4770.JPG";
+import Image3 from "../../assets/Hero-Images/IMG_4882.JPG";
+import Image4 from "../../assets/Hero-Images/IMG_4929.JPG";
+import Image5 from "../../assets/Hero-Images/IMG_5079.JPG";
+import Image6 from "../../assets/Hero-Images/IMG_5060.JPG";
 
 const Hero = () => {
   return (
@@ -8,24 +14,54 @@ const Hero = () => {
       <Carousel showStatus={false} showThumbs={false}>
         <div>
           <img
-            src="https://mdbcdn.b-cdn.net/img/new/slides/041.webp"
-            className="block w-full"
+            src={Image1}
+            // src="https://drive.google.com/thumbnail?id=1Ugp819rHnCnMXWZ3zW9mbXeKnhjNvIup"
+            className="block w-full items-center h[300px]"
             alt="Camera"
           />
           {/* <p className="legend">Legend 1</p> */}
         </div>
         <div>
           <img
-            src="https://mdbcdn.b-cdn.net/img/new/slides/042.webp"
-            className="block w-full"
+            src={Image2}
+            // src="https://drive.google.com/thumbnail?id=169vANTWWlaSbJkwsV5YpJS30ht3coDTe"
+            className="block w-1/2"
             alt="Camera"
           />
           {/* <p className="legend">Legend 2</p> */}
         </div>
         <div>
           <img
-            src="https://mdbcdn.b-cdn.net/img/new/slides/043.webp"
-            className="block w-full"
+            src={Image3}
+            // src="https://drive.google.com/thumbnail?id=11fHf2H2Vq9NRt26uny8uqGfSeeXyifgr"
+            className="block w-1/2"
+            alt="Camera"
+          />
+          {/* <p className="legend">Legend 3</p> */}
+        </div>
+        <div>
+          <img
+            src={Image4}
+            // src="https://drive.google.com/thumbnail?id=1glv-_WqRrMydLjFS8xRk5KOYuQS1G0fy"
+            className="block w-1/2"
+            alt="Camera"
+          />
+          {/* <p className="legend">Legend 3</p> */}
+        </div>
+        <div>
+          <img
+            src={Image5}
+            // src="https://drive.google.com/thumbnail?id=1glv-_WqRrMydLjFS8xRk5KOYuQS1G0fy"
+            className="block w-1/2"
+            alt="Camera"
+          />
+          {/* <p className="legend">Legend 3</p> */}
+        </div>
+        <div>
+          <img
+            src={Image6}
+            // src="https://drive.google.com/thumbnail?id=1glv-_WqRrMydLjFS8xRk5KOYuQS1G0fy"
+            className="block w-1/2"
             alt="Camera"
           />
           {/* <p className="legend">Legend 3</p> */}
@@ -63,21 +99,21 @@ const Hero = () => {
           <div className="carousel-item active float-left w-full">
             <img
               src="https://mdbcdn.b-cdn.net/img/new/slides/041.webp"
-              className="block w-full"
+              className="block w-1/2"
               alt="Wild Landscape"
             />
           </div>
           <div className="carousel-item float-left w-full">
             <img
               src="https://mdbcdn.b-cdn.net/img/new/slides/042.webp"
-              className="block w-full"
+              className="block w-1/2"
               alt="Camera"
             />
           </div>
           <div className="carousel-item float-left w-full">
             <img
               src="https://mdbcdn.b-cdn.net/img/new/slides/043.webp"
-              className="block w-full"
+              className="block w-1/2"
               alt="Exotic Fruits"
             />
           </div>
