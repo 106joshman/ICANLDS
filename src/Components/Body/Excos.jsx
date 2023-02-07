@@ -1,5 +1,5 @@
 import React from "react";
-import Chairman from "../../assets/Exco/AlestaWilcox.jpg";
+// import Chairman from "../../assets/Exco/AlestaWilcox.jpg";
 import GenSec from "../../assets/Exco/ToyinOgunlowo.jpg";
 
 const Excos = () => {
@@ -15,7 +15,7 @@ const Excos = () => {
           <div className="grid md:grid-cols-3 xl:grid-cols-4 gap-x-6 lg:gap-xl-12">
             <div className="mb-12">
               <img
-                src={Chairman}
+                src="https://mdbootstrap.com/img/new/avatars/5.jpg"
                 className="rounded-full mx-auto shadow-lg mb-4"
                 alt=""
                 style={{ maxWidth: "60%" }}
