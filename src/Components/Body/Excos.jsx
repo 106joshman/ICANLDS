@@ -1,6 +1,6 @@
 import React from "react";
-import Chairman from '../../assets/Exco/Alesta Wilcox.jpg'
-import GenSec from '../../assets/Exco/Toyin Ogunlowo.jpg'
+import Chairman from '../../assets/Exco/AlestaWilcox.jpg'
+import GenSec from '../../assets/Exco/ToyinOgunlowo.jpg'
 
 export default function Excos() {
   return (
