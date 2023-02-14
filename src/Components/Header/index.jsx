@@ -25,15 +25,16 @@ const Navbar = () => {
 
   const navLinks = [
     { id: 0, name: "Home", path: "home" },
-    { id: 0, name: "About", path: "/" },
-    { id: 0, name: "Gallery", path: "/" },
+    { id: 0, name: "About", path: "about" },
+    { id: 0, name: "Blog", path: "blog" },
+    { id: 0, name: "Gallery", path: "gallery" },
     { id: 0, name: "Contact", path: "contact" },
   ];
 
   return (
     <>
       <nav
-        className="flex items-center fixed w-full justify-between px-6 md:px-10 py-4 z-[999]"
+        className="flex items-center fixed w-full justify-between px-2.5 md:px-10 py-4 z-[999]"
         style={{
           backgroundColor: navColor,
           color: textColor,
@@ -50,7 +51,7 @@ const Navbar = () => {
         <div className="flex order-2">
           <button
             type="button"
-            className="text-white bg-blue-700 hover:bg-blue-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-3 lg:mr-0 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+            className="text-white bg-blue-700 hover:bg-blue-800 font-medium rounded-lg text-sm px-2 py-2 text-center mr-3 lg:mr-0 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
             data-bs-toggle="modal"
             data-bs-target="#staticBackdrop"
           >

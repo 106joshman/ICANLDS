@@ -2,19 +2,19 @@ import React from "react";
 import ChairMan from "../../assets/Exco/AlestaWIlcox.jpg";
 const Speech = () => {
   return (
-    <section className="lg:h-100vh] relative">
+    <section id="about" className="relative">
       {/* Chairman's Speech */}
-      <div className="flex flex-col lg:flex-row justify-between p-6 md:p-10">
+      <div className="flex flex-col lg:h-[100vh] lg:flex-row justify-between items-center p-6 md:p-10">
         <div className="image">
           <img
             src={ChairMan}
             // src="https://mdbootstrap.com/img/new/avatars/5.jpg"
-            className="w-full md:w-3/5 lg:w-full m-auto h-96"
+            className="w-full md:w-35 lg:w-full m-auto h-96"
             loading="lazy"
             alt=""
             srcset=""
           />
-          <p className="flex flex-col md:left-36 lg:left-0 -top-20 ml-2.5 w-[350px] text-white relative">
+          <p className="flex flex-col lg:left-0 -top-20 ml-2.5 w-[350px] text-white relative">
             <span className="text-3xl font-semibold">Alesta Wilcox, FCA</span>
             <span className="text-base font-bold">20th Chairman</span>
           </p>

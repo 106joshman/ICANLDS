@@ -1,4 +1,5 @@
 import React from "react";
+import Blog from "./Blog";
 import Excos from "./Excos";
 import Hero from "./Hero";
 import Speech from "./Speech";
@@ -8,6 +9,7 @@ const Main = () => {
     <>
       <Hero />
       <Speech />
+      <Blog/>
       <Excos />
     </>
   );
