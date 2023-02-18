@@ -43,7 +43,7 @@ const Navbar = () => {
         }}
       >
         <div className="">
-          <Link to="home">
+          <Link to="home" spy={true} smooth={true} offset={-70} duration={500}>
             <Logo />
           </Link>
         </div>
@@ -51,7 +51,7 @@ const Navbar = () => {
         <div className="flex order-2">
           <button
             type="button"
-            className="text-white bg-blue-700 hover:bg-blue-800 font-medium rounded-lg text-sm px-2 py-2 text-center mr-3 lg:mr-0 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+            className="text-white hidden lg:flex bg-blue-700 hover:bg-blue-800 font-medium rounded-lg text-sm px-2 py-2 text-center mr-3 lg:mr-0 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
             data-bs-toggle="modal"
             data-bs-target="#staticBackdrop"
           >
@@ -60,9 +60,9 @@ const Navbar = () => {
 
           <div className="lg:hidden">
             <Hamburger
-              color="#6b7280"
+              color="#5ce1e6"
               label="Show menu"
-              backgroundColor='gray'
+              backgroundColor="gray"
               distance="md"
               rounded
               hideOutline={false}
@@ -71,27 +71,6 @@ const Navbar = () => {
               toggle={setOpen}
             />
           </div>
-          {/* <button
-            type="button"
-            class="inline-flex items-center p-2 text-sm text-gray-500 rounded-lg lg:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
-            onClick={handleMobileMenu}
-          >
-            <span class="sr-only">Open main menu</span>
-            <svg
-              class="w-6 h-6"
-              aria-hidden="true"
-              focusable="false"
-              fill="currentColor"
-              viewBox="0 0 20 20"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                fill-rule="evenodd"
-                d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
-                clip-rule="evenodd"
-              ></path>
-            </svg>
-          </button> */}
         </div>
 
         <div className="navLinks md:order-1 w-full md:block md:w-auto">
@@ -207,7 +186,9 @@ const Navbar = () => {
           </div>
         </div>
       </div>
-      {isOpen && <MobileNav navLinks={navLinks} />}
+      {isOpen && (
+        <MobileNav navLinks={navLinks} isOpen={isOpen} setOpen={setOpen} />
+      )}
     </>
   );
 };

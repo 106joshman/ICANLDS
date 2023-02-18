@@ -7,63 +7,58 @@ import Image3 from "../../assets/Hero-Images/IMG_4882.JPG";
 import Image4 from "../../assets/Hero-Images/IMG_4929.JPG";
 import Image5 from "../../assets/Hero-Images/IMG_5079.JPG";
 import Image6 from "../../assets/Hero-Images/IMG_5060.JPG";
+// import HeroImage from "../../assets/Hero.jpg";
 
 const Hero = () => {
   return (
     <section id="home" className="">
-      <Carousel showStatus={false} showThumbs={false} infiniteLoop={true}>
+      <div
+        class="p-12 md:hidden text-center relative overflow-hidden bg-no-repeat bg rounded-lg bg-hero-image h-screen bg-center bg-contain bg-[#233e8c]"
+        style={{
+          // backgroundImage: "url('../../assets/Hero.jpg')",
+          height: "100vh",
+        }}
+      >
+        <div
+          class="absolute top-0 right-0 bottom-0 left-0 w-full h-full overflow-hidden bg-fixed"
+          style={{ backgroundColor: "rgba(0, 0, 0, 0.3)" }}
+        >
+          <div class="flex justify-center items-center h-full">
+            <div class="text-white ">
+              <h2 class="font-semibold text-7xl mb-4 text-transparent bg-clip-text bg-gradient-to-r from-[#5ce1e6] to-[#233e8c]">
+                Welcome
+              </h2>
+              <h4 class="font-semibold text-4xl mb-6 text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-pink-500">
+                to ICANLDS
+              </h4>
+              {/* <img src={HeroImage} alt="" srcset="" />  cde7f7, a2dbc7, 5ce1e6, 233e8c*/}
+            </div>
+          </div>
+        </div>
+      </div>
+      <Carousel className="hidden md:flex" showStatus={false} showThumbs={false} infiniteLoop={true}>
         <div className="grid place-items-center h-[70vh] md:h-auto">
-          <img
-            src={Image1}
-            // src="https://drive.google.com/thumbnail?id=1Ugp819rHnCnMXWZ3zW9mbXeKnhjNvIup"
-            className="block w-full"
-            alt="Camera"
-          />
+          <img src={Image1} className="block w-full" alt="Camera" />
           {/* <p className="legend">Legend 1</p> */}
         </div>
         <div className="grid place-items-center h-[70vh] md:h-auto">
-          <img
-            src={Image2}
-            // src="https://drive.google.com/thumbnail?id=169vANTWWlaSbJkwsV5YpJS30ht3coDTe"
-            className="block w-full"
-            alt="Camera"
-          />
+          <img src={Image2} className="block w-full" alt="Camera" />
           {/* <p className="legend">Legend 2</p> */}
         </div>
         <div className="grid place-items-center h-[70vh] md:h-auto">
-          <img
-            src={Image3}
-            // src="https://drive.google.com/thumbnail?id=11fHf2H2Vq9NRt26uny8uqGfSeeXyifgr"
-            className="block w-full"
-            alt="Camera"
-          />
+          <img src={Image3} className="block w-full" alt="Camera" />
           {/* <p className="legend">Legend 3</p> */}
         </div>
         <div className="grid place-items-center h-[70vh] md:h-auto">
-          <img
-            src={Image4}
-            // src="https://drive.google.com/thumbnail?id=1glv-_WqRrMydLjFS8xRk5KOYuQS1G0fy"
-            className="block w-full"
-            alt="Camera"
-          />
+          <img src={Image4} className="block w-full" alt="Camera" />
           {/* <p className="legend">Legend 3</p> */}
         </div>
         <div className="grid place-items-center h-[70vh] md:h-auto">
-          <img
-            src={Image5}
-            // src="https://drive.google.com/thumbnail?id=1glv-_WqRrMydLjFS8xRk5KOYuQS1G0fy"
-            className="block w-full"
-            alt="Camera"
-          />
-          {/* <p className="legend">Legend 3</p> */}
+          <img src={Image5} className="block w-full" alt="Camera" />
+          {/* <p className="legend">Legend 3</p>*/}
         </div>
         <div className="grid place-items-center h-[70vh] md:h-auto">
-          <img
-            src={Image6}
-            // src="https://drive.google.com/thumbnail?id=1glv-_WqRrMydLjFS8xRk5KOYuQS1G0fy"
-            className="block w-full"
-            alt="Camera"
-          />
+          <img src={Image6} className="block w-full" alt="Camera" />
           {/* <p className="legend">Legend 3</p> */}
         </div>
       </Carousel>

@@ -6,7 +6,11 @@ module.exports = {
     "node_modules/flowbite-react/**/*.{js,jsx,ts,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      backgroundImage: {
+        'hero-image': "url('../public/assets/Hero.jpg')",
+      }
+    },
   },
   plugins: [require("tw-elements/dist/plugin")],
 };

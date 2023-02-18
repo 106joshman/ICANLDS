@@ -1,6 +1,7 @@
 import React from "react";
 import ChairMan from "../../assets/Exco/AlestaWIlcox.jpg";
 import GenSec from "../../assets/Exco/ToyinOgunlowo.jpg";
+import Exco1 from "../../assets/Exco/ChristopherEhiogie.jpg";
 
 const Excos = () => {
   return (
