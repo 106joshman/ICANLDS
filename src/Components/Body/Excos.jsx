@@ -1,6 +1,16 @@
 import React from "react";
 import ChairMan from "../../assets/Exco/AlestaWIlcox.jpg";
 import GenSec from "../../assets/Exco/ToyinOgunlowo.jpg";
+import Vice from "../../assets/Exco/Mr. Ansa.jpg";
+import IPC from "../../assets/Exco/mr. john isesele.jpg";
+import FinSec from "../../assets/Exco/Dr. Olumide.jpg";
+import Seun from "../../assets/Exco/Seun.jpeg";
+import Technical from "../../assets/Exco/Ifeanyi.jpg";
+import Exco2 from "../../assets/Exco/Oduwaye.jpg";
+import Social from "../../assets/Exco/Shola.jpg";
+import Dvice from "../../assets/Exco/Bukunola.jpg";
+import Membership from "../../assets/Exco/Kikelomo.jpg";
+import Treasurer from "../../assets/Exco/Martin.jpg";
 import Exco1 from "../../assets/Exco/ChristopherEhiogie.jpg";
 
 const Excos = () => {
@@ -20,8 +30,8 @@ const Excos = () => {
                 // src="https://mdbootstrap.com/img/new/avatars/5.jpg"
                 className="rounded-full mx-auto shadow-lg mb-4"
                 alt=""
-                style={{ maxWidth: "60%" }}
-                loading="lazy"
+                style={{ maxWidth: "60%", height: 215 }}
+                // loading="lazy"
               />
 
               <p className="font-bold mb-1 text-black">Alesta Wilcox, FCA</p>
@@ -30,11 +40,11 @@ const Excos = () => {
 
             <div className="mb-12">
               <img
-                src="https://mdbootstrap.com/img/new/avatars/5.jpg"
+                src={Vice}
                 className="rounded-full mx-auto shadow-lg mb-4"
                 alt=""
-                style={{ maxWidth: "60%" }}
-                loading="lazy"
+                style={{ maxWidth: "60%", height: 215 }}
+                // loading="lazy"
               />
 
               <p className="font-bold mb-1 text-black">Joshua Ansa, FCA</p>
@@ -43,11 +53,11 @@ const Excos = () => {
 
             <div className="mb-12">
               <img
-                src="https://mdbootstrap.com/img/new/avatars/6.jpg"
+                src={Dvice}
                 className="rounded-full mx-auto shadow-lg mb-4"
                 alt=""
-                style={{ maxWidth: "60%" }}
-                loading="lazy"
+                style={{ maxWidth: "60%", height: 215 }}
+                // loading="lazy"
               />
               <p className="font-bold mb-1 text-black">
                 Bukunola Akinmoladun, FCA
@@ -67,25 +77,25 @@ const Excos = () => {
 
             <div className="mb-12">
               <img
-                src="https://mdbootstrap.com/img/new/avatars/8.jpg"
+                src={Treasurer}
                 className="rounded-full mx-auto shadow-lg mb-4"
                 alt=""
-                style={{ maxWidth: "60%" }}
-                loading="lazy"
+                style={{ maxWidth: "60%", height: 215 }}
+                // loading="lazy"
               />
               <p className="font-bold mb-1 text-black">
-                Dr. MArtin Ikpehai, ACA
+                Dr. Martin Ikpehai, ACA
               </p>
               <p className="text-gray-500">Treasurer</p>
             </div>
 
             <div className="mb-12">
               <img
-                src="https://mdbootstrap.com/img/new/avatars/9.jpg"
-                className="rounded-full mx-auto shadow-lg mb-4"
+                src={Membership}
+                className="rounded-full mx-auto items-center shadow-lg mb-4"
                 alt=""
-                style={{ maxWidth: "60%" }}
-                loading="lazy"
+                style={{ maxWidth: "60%", height: 215 }}
+                // loading="lazy"
               />
               <p className="font-bold mb-1 text-black">Kikelomo Abikele, FCA</p>
               <p className="text-gray-500">Membership Secretary</p>
@@ -93,11 +103,11 @@ const Excos = () => {
 
             <div className="mb-12">
               <img
-                src="https://mdbootstrap.com/img/new/avatars/10.jpg"
+                src={Social}
                 className="rounded-full mx-auto shadow-lg mb-4"
                 alt=""
-                style={{ maxWidth: "60%" }}
-                loading="lazy"
+                style={{ maxWidth: "60%", height: 215 }}
+                // loading="lazy"
               />
               <p className="font-bold mb-1 text-black">Olusola Adegbite, FCA</p>
               <p className="text-gray-500">Social & Publicity Secretary</p>
@@ -105,11 +115,11 @@ const Excos = () => {
 
             <div className="mb-12">
               <img
-                src="https://mdbootstrap.com/img/new/avatars/11.jpg"
+                src={FinSec}
                 className="rounded-full mx-auto shadow-lg mb-4"
                 alt=""
-                style={{ maxWidth: "60%" }}
-                loading="lazy"
+                style={{ maxWidth: "60%", height: 215 }}
+                // loading="lazy"
               />
               <p className="font-bold mb-1 text-black">
                 Dr. Olumide Adedeji, FCA
@@ -119,11 +129,11 @@ const Excos = () => {
 
             <div className="mb-12">
               <img
-                src="https://mdbootstrap.com/img/new/avatars/12.jpg"
+                src={Technical}
                 className="rounded-full mx-auto shadow-lg mb-4"
                 alt=""
-                style={{ maxWidth: "60%" }}
-                loading="lazy"
+                style={{ maxWidth: "60%", height: 215 }}
+                // loading="lazy"
               />
               <p className="font-bold mb-1 text-black">Ifeanyi Ugbomode, ACA</p>
               <p className="text-gray-500">Technical Secretary</p>
@@ -131,11 +141,11 @@ const Excos = () => {
 
             <div className="mb-12">
               <img
-                src="https://mdbootstrap.com/img/new/avatars/13.jpg"
+                src={Seun}
                 className="rounded-full mx-auto shadow-lg mb-4"
                 alt=""
-                style={{ maxWidth: "60%" }}
-                loading="lazy"
+                style={{ maxWidth: "60%", height: 215 }}
+                // loading="lazy"
               />
               <p className="font-bold mb-1 text-black">
                 Oluwaseun Ileols-Olaseni, FCA
@@ -145,11 +155,11 @@ const Excos = () => {
 
             <div className="mb-12">
               <img
-                src="https://mdbootstrap.com/img/new/avatars/14.jpg"
+                src={Exco2}
                 className="rounded-full mx-auto shadow-lg mb-4"
                 alt=""
-                style={{ maxWidth: "60%" }}
-                loading="lazy"
+                style={{ maxWidth: "60%", height: 215 }}
+                // loading="lazy"
               />
               <p className="font-bold mb-1 text-black">
                 Oluwafunmilayo Oduwaye, FCA
@@ -159,11 +169,11 @@ const Excos = () => {
 
             <div className="mb-12">
               <img
-                src="https://mdbootstrap.com/img/new/avatars/15.jpg"
+                src={Exco1}
                 className="rounded-full mx-auto shadow-lg mb-4"
                 alt=""
-                style={{ maxWidth: "60%" }}
-                loading="lazy"
+                style={{ maxWidth: "60%", height: 215 }}
+                // loading="lazy"
               />
               <p className="font-bold mb-1 text-black">
                 Christopher Ehiogie, FCA
@@ -173,11 +183,11 @@ const Excos = () => {
 
             <div className="mb-12">
               <img
-                src="https://mdbootstrap.com/img/new/avatars/15.jpg"
+                src={IPC}
                 className="rounded-full mx-auto shadow-lg mb-4"
                 alt=""
                 style={{ maxWidth: "60%" }}
-                loading="lazy"
+                // loading="lazy"
               />
               <p className="font-bold mb-1 text-black">John Isesele, FCA</p>
               <p className="text-gray-500">Immediate Past Chairman (IPC)</p>

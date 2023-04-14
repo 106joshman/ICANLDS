@@ -7,36 +7,42 @@ import Image3 from "../../assets/Hero-Images/IMG_4882.JPG";
 import Image4 from "../../assets/Hero-Images/IMG_4929.JPG";
 import Image5 from "../../assets/Hero-Images/IMG_5079.JPG";
 import Image6 from "../../assets/Hero-Images/IMG_5060.JPG";
+import Speech from "./Speech";
 // import HeroImage from "../../assets/Hero.jpg";
 
 const Hero = () => {
   return (
     <section id="home" className="">
       <div
-        class="p-12 md:hidden text-center relative overflow-hidden bg-no-repeat bg rounded-lg bg-hero-image h-screen bg-center bg-contain bg-[#233e8c]"
+        className="p-12 md:hidden text-center relative overflow-hidden bg-no-repeat bg rounded-lg bg-hero-image h-screen bg-center bg-contain bg-[#233e8c]"
         style={{
           // backgroundImage: "url('../../assets/Hero.jpg')",
           height: "100vh",
         }}
       >
         <div
-          class="absolute top-0 right-0 bottom-0 left-0 w-full h-full overflow-hidden bg-fixed"
+          className="absolute top-0 right-0 bottom-0 left-0 w-full h-full overflow-hidden bg-fixed"
           style={{ backgroundColor: "rgba(0, 0, 0, 0.3)" }}
         >
-          <div class="flex justify-center items-center h-full">
-            <div class="text-white ">
-              <h2 class="font-semibold text-7xl mb-4 text-transparent bg-clip-text bg-gradient-to-r from-[#5ce1e6] to-[#233e8c]">
+          <div className="flex justify-center items-center h-full">
+            <div className="text-white ">
+              {/* <h2 className="font-semibold text-7xl mb-4 text-transparent bg-clip-text bg-gradient-to-r from-[#5ce1e6] to-[#233e8c]">
                 Welcome
               </h2>
-              <h4 class="font-semibold text-4xl mb-6 text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-pink-500">
+              <h4 className="font-semibold text-4xl mb-6 text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-pink-500">
                 to ICANLDS
-              </h4>
-              {/* <img src={HeroImage} alt="" srcset="" />  cde7f7, a2dbc7, 5ce1e6, 233e8c*/}
+              </h4> */}
+              {/* <img src={HeroImage} alt="" srcSet="" />  cde7f7, a2dbc7, 5ce1e6, 233e8c*/}
             </div>
           </div>
         </div>
       </div>
-      <Carousel className="hidden md:flex" showStatus={false} showThumbs={false} infiniteLoop={true}>
+      <Carousel
+        className="hidden md:flex"
+        showStatus={false}
+        showThumbs={false}
+        infiniteLoop={true}
+      >
         <div className="grid place-items-center h-[70vh] md:h-auto">
           <img src={Image1} className="block w-full" alt="Camera" />
           {/* <p className="legend">Legend 1</p> */}
@@ -138,6 +144,7 @@ const Hero = () => {
           <span className="visually-hidden">Next</span>
         </button>
       </div> */}
+      <Speech/>
     </section>
   );
 };
