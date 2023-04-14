@@ -1,6 +1,27 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
+import data from "../Body/blog/article.json";
 
 const Blog = () => {
+  // const [data, setData] = useState();
+
+  // useEffect(() => {
+  //   const fetchArticle = () => {
+  //     fetch("./article.json")
+  //       .then((response) => {
+  //         return response.json();
+  //       })
+  //       .then((data) => {
+  //         setData(data);
+  //       })
+  //       .catch((error) => {
+  //         console.log(error);
+  //       });
+  //   };
+
+  //   fetchArticle();
+  // }, []);
+
   return (
     // <!-- Container Start -->
     <div className="bg-[#a2dbc7]">
@@ -14,77 +35,18 @@ const Blog = () => {
           </div>
           <div className="newsList flex justify-between">
             <ul className="newsItem w-full flex flex-col">
-              <li className="py-2">
-                <a
-                  href="/blog/newly-elected-electoral-committee"
-                  className="block px-5 border-gray-500 hover:underline pb-2 items-center"
-                >
-                  Newly appointed Electoral Committe ahead of the 2023 distrcit
-                  election
-                </a>
-              </li>
-              <li className="py-2">
-                <a
-                  href="#"
-                  className="block px-5 border-gray-500 hover:underline pb-2 items-center"
-                >
-                  ICAN President visits ICANLDS for a one day courtesy visit and
-                  Patron Investiture.
-                </a>
-              </li>
-              <li className="py-2">
-                <a
-                  href="#"
-                  className="block px-5 border-gray-500 hover:underline pb-2 items-center"
-                >
-                  ICANLDS members inagurated as members of the FRSC special
-                  marshal Corps in Lagos.
-                </a>
-              </li>
-              <li className="py-2">
-                <a
-                  href="#"
-                  className="block px-5 border-gray-500 hover:underline pb-2 items-center"
-                >
-                  ICANLDS organizes a one day event to sensitize students of the
-                  Accounting profession to schools in its host community.
-                </a>
-              </li>
-              <li className="py-2">
-                <a
-                  href="#"
-                  className="block px-5 border-gray-500 hover:underline pb-2 items-center"
-                >
-                  Photo story of the 2022 Investiture Ceremony of the 20th
-                  Chairman of ICAN Lagos and District Society.
-                </a>
-              </li>
-
-              <li className="py-2">
-                <a
-                  href="chairman-speech"
-                  className="block px-5 border-gray-500 hover:underline pb-2 items-center"
-                >
-                  ICANLDS 20th Chairman speech.
-                </a>
-              </li>
-              <li className="py-2">
-                <a
-                  href="#"
-                  className="block px-5 border-gray-500 hover:underline pb-2 items-center"
-                >
-                  ICANLDS 2022 AGM (Ease-In-Out as baton changes hand)
-                </a>
-              </li>
-              <li className="py-2">
-                <a
-                  href="#"
-                  className="block px-5 border-gray-500 hover:underline pb-2 items-center"
-                >
-                  ICANLDS 2022 Executive committee members meets with PwC
-                  partners to build partnership.
-                </a>
-              </li>
+              {data.map((items, index) => {
+                return (
+                  <li className="py-2" key={index}>
+                    <Link
+                      to={`/blog/${items.id}`}
+                      className="block px-5 border-gray-500 hover:underline pb-2 items-center"
+                    >
+                      {items.linkTitle}
+                    </Link>
+                  </li>
+                );
+              })}
             </ul>
           </div>
         </section>
@@ -92,11 +54,31 @@ const Blog = () => {
         <div className="updates py-5">
           <marquee behavior="" direction="left">
             <ul className="flex flex-row">
-              <li className="mx-4"><a href="#" className=" hover:underline">Lorem Ipsum</a></li>
-              <li className="mx-4"><a href="#" className=" hover:underline">Lorem Ipsum</a></li>
-              <li className="mx-4"><a href="#" className=" hover:underline">Lorem Ipsum</a></li>
-              <li className="mx-4"><a href="#" className=" hover:underline">Lorem Ipsum</a></li>
-              <li className="mx-4"><a href="#" className=" hover:underline">Lorem Ipsum</a></li>
+              <li className="mx-4">
+                <a href="#" className=" hover:underline">
+                  Lorem Ipsum
+                </a>
+              </li>
+              <li className="mx-4">
+                <a href="#" className=" hover:underline">
+                  Lorem Ipsum
+                </a>
+              </li>
+              <li className="mx-4">
+                <a href="#" className=" hover:underline">
+                  Lorem Ipsum
+                </a>
+              </li>
+              <li className="mx-4">
+                <a href="#" className=" hover:underline">
+                  Lorem Ipsum
+                </a>
+              </li>
+              <li className="mx-4">
+                <a href="#" className=" hover:underline">
+                  Lorem Ipsum
+                </a>
+              </li>
             </ul>
           </marquee>
         </div>

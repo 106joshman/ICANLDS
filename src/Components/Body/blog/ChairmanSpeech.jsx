@@ -1,25 +1,47 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import ChairMan from "../../../assets/Exco/AlestaWIlcox.jpg";
 import { useParams } from "react-router-dom";
+import Navbar from "../../Header";
+import Footer from "../../Footer";
 
 const ChairmanSpeech = () => {
   const { id } = useParams;
+  const [data, setData] = useState();
 
-  useEffect(
-    () => {
-      const fetchArticle = () => {
-        fetch();
-      };
+  useEffect(() => {
+    const fetchArticle = () => {
+      fetch(`./article.json/` + id)
+        .then((response) => {
+          return response.json();
+        })
+        .then((data) => {
+          setData(data);
+        })
+        .catch((error) => {
+          console.log(error);
+        });
+    };
 
-      fetchArticle();
-    },
-    { id }
-  );
+    fetchArticle();
+  }, [id]);
+
   return (
     <>
+      <Navbar />
       <div className=" mx-auto container">
-        {/* Chairman's Speech */}
-        <div className="flex flex-col lg:h-[100vh] lg:flex-row justify-between items-center p-6">
+        <h2 className="">{data?.title}</h2>
+
+        <p className="">{data?.body}</p>
+      </div>
+      <Footer />
+    </>
+  );
+};
+
+export default ChairmanSpeech;
+
+{
+  /* <div className="flex flex-col lg:h-[100vh] lg:flex-row justify-between items-center p-6">
           <div className="image">
             <img
               src={ChairMan}
@@ -105,10 +127,5 @@ const ChairmanSpeech = () => {
               <span>20th Chairman, ICANLDS</span>
             </h5>
           </div>
-        </div>
-      </div>
-    </>
-  );
-};
-
-export default ChairmanSpeech;
+        </div> */
+}

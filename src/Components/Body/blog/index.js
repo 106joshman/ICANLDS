@@ -6,7 +6,7 @@ const BlogLinks = () => {
   return (
     <Router>
       <Routes>
-        <Route path="chairman-speech" element={<ChairmanSpeech />} />
+        <Route path="blog/:id" element={<ChairmanSpeech />} />
       </Routes>
     </Router>
   );

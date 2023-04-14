@@ -1,10 +1,8 @@
 import React from "react";
-// import { Routes, Route } from "react-router-dom";
 import Blog from "./Blog";
 import Excos from "./Excos";
 import Hero from "./Hero";
 import About from "./about";
-// import ChairmanSpeech from "./blog/ChairmanSpeech";
 
 const Main = () => {
   return (
