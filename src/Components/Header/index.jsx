@@ -11,7 +11,7 @@ const Navbar = () => {
   const [textColor, setTextColor] = useState("black");
 
   const listenScrollEvent = () => {
-    window.scrollY > 250 ? setnavColor("#252734") : setnavColor("transparent");
+    window.scrollY > 200 ? setnavColor("#252734") : setnavColor("transparent");
     window.scrollY > 250 ? setTextColor("#ffffff") : setTextColor("black");
     // window.scrollY > 10 ? setnavSize("5rem") : setnavSize("10rem");
   };

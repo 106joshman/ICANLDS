@@ -1,5 +1,5 @@
 import React from "react";
-import ChairMan from "../../../assets/Exco/AlestaWIlcox.jpg";
+import ChairMan from "../../assets/Exco/AlestaWIlcox.jpg";
 
 const ChairmanSpeech = () => {
   return (

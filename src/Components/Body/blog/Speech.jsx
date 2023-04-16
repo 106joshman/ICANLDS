@@ -1,17 +1,17 @@
 import React from "react";
-import ChairMan from "../../assets/Exco/AlestaWIlcox.jpg";
+import ChairMan from "../../../assets/Exco/AlestaWIlcox.jpg";
 const Speech = () => {
   return (
     <section className="relative bg-[#fff]">
       <div className=" mx-auto container">
         {/* Chairman's Speech */}
-        <div className="flex flex-col lg:h-[100vh] lg:flex-row justify-between items-center p-6">
+        <div className="flex flex-col lg:h-[100vh] lg:flex-row justify-between items-center px-6 pt-[6rem] lg:pt-6">
           <div className="image">
             <img
               src={ChairMan}
               // src="https://mdbootstrap.com/img/new/avatars/5.jpg"
               className="w-full md:w-35 lg:w-full m-auto h-96"
-              loading="lazy"
+              // loading="lazy"
               alt=""
               srcSet=""
             />
