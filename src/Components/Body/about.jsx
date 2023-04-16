@@ -4,7 +4,7 @@ const About = () => {
   return (
     <section id="about">
       <div className="mx-auto container text-gray-100">
-        <div className=" p-8">
+        <div className=" p-6">
           <h3>ICAN LAGOS AND DISTRICT SOCIETY</h3>
           <p className="mb-2.5">
             The Lagos and DIstrict Society of the Institute of Chartered

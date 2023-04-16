@@ -1,9 +1,9 @@
 import React from "react";
 import ChairMan from "../../assets/Exco/AlestaWIlcox.jpg";
 import GenSec from "../../assets/Exco/ToyinOgunlowo.jpg";
-import Vice from "../../assets/Exco/Mr. Ansa.jpg";
-import IPC from "../../assets/Exco/mr. john isesele.jpg";
-import FinSec from "../../assets/Exco/Dr. Olumide.jpg";
+import Vice from "../../assets/Exco/Ansa.jpg";
+import Ipc from "../../assets/Exco/johnIsesele.jpg";
+import FinSec from "../../assets/Exco/AdedejiOlumide.jpg";
 import Seun from "../../assets/Exco/Seun.jpeg";
 import Technical from "../../assets/Exco/Ifeanyi.jpg";
 import Exco2 from "../../assets/Exco/Oduwaye.jpg";
@@ -183,7 +183,7 @@ const Excos = () => {
 
             <div className="mb-12">
               <img
-                src={IPC}
+                src={Ipc}
                 className="rounded-full mx-auto shadow-lg mb-4"
                 alt=""
                 style={{ maxWidth: "60%" }}

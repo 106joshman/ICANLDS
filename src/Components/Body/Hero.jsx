@@ -8,6 +8,7 @@ import Image4 from "../../assets/Hero-Images/IMG_4929.JPG";
 import Image5 from "../../assets/Hero-Images/IMG_5079.JPG";
 import Image6 from "../../assets/Hero-Images/IMG_5060.JPG";
 import Speech from "./Speech";
+import ChairmanSpeech from "./blog/ChairmanSpeech";
 // import HeroImage from "../../assets/Hero.jpg";
 
 const Hero = () => {
@@ -144,7 +145,8 @@ const Hero = () => {
           <span className="visually-hidden">Next</span>
         </button>
       </div> */}
-      <Speech/>
+      <ChairmanSpeech/>
+      {/* <Speech/> */}
     </section>
   );
 };
