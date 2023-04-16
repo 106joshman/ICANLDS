@@ -5,7 +5,7 @@ const About = () => {
     <section id="about">
       <div className="mx-auto container text-gray-100">
         <div className=" p-6">
-          <h3>ICAN LAGOS AND DISTRICT SOCIETY</h3>
+          <h3 className="mb-2 text-xl">ICAN LAGOS AND DISTRICT SOCIETY</h3>
           <p className="mb-2.5">
             The Lagos and DIstrict Society of the Institute of Chartered
             Accountants of Nigeria (ICANLDS) is the premier district of the
@@ -17,17 +17,43 @@ const About = () => {
             ICANLDS has produced quite a number of ICAN Presidents, and notable
             council members. it also boast of reputable professionals from
             amongst the top tiers in auditing, Oil and Gas, Energy,
-            telecommunication and the banking sector just to mention a few. It
+            telecommunication and the Banking sector just to mention a few. It
             also has the Oniru of Iru land HRM KABIYESI OBA ABDULWASIU GBOLAHAN
             AJASA LAWAL as it grand Patron who is also supported by six(6) other
             patrons who are upstanding and respectable members of the society.
           </p>
 
-          <p className="mb-2.5">
-            The secretariat of the ICAN Lagos and District Society is currently
-            loacted on 106/110 Lewis Street, Obalende, Lagos Island on the 5th
-            Floor.
-          </p>
+          <div className="vision">
+            <h3 className="text-[#a2dbc7] text-xl underline underline-offset-[0.2em] my-2 uppercase">
+              our vision
+            </h3>
+
+            <p className="">
+              To uphold to the highest standard the honor and integrity of the
+              Accouning profession as the premier district of the Insute of
+              Chartered Accountants of Nigeria.
+            </p>
+          </div>
+
+          <div className="mission">
+            <h3 className="text-blue-700 text-xl underline underline-offset-[0.2em] my-2 uppercase">
+              mission
+            </h3>
+            <p className="">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla
+              dicta sapiente repudiandae optio rem ut animi. Quibusdam eius
+              placeat, unde ipsum praesentium maiores distinctio nisi doloremque
+              laboriosam sint voluptatibus magni.
+            </p>
+          </div>
+
+          <div className="my-4">
+            <p className="">
+              The secretariat of the ICAN Lagos and District Society is
+              currently loacted on 106/110 Lewis Street, Obalende, Lagos Island
+              on the 5th Floor.
+            </p>
+          </div>
 
           <div class="tablee flex flex-col bg-[#242424] text-green-400">
             <div class="overflow-x-auto sm:-mx-6 lg:-mx-8">
