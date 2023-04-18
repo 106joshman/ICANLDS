@@ -1,19 +1,27 @@
-import React from "react";
+import React, { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const About = () => {
+  useEffect(() => {
+    AOS.init();
+    AOS.refresh();
+  }, []);
   return (
     <section id="about">
       <div className="mx-auto container text-gray-100">
         <div className=" p-6">
-          <h3 className="mb-2 text-xl">ICAN LAGOS AND DISTRICT SOCIETY</h3>
-          <p className="mb-2.5">
+          <h3 className="mb-2 text-xl" data-aos="fade-right">
+            ICAN LAGOS AND DISTRICT SOCIETY
+          </h3>
+          <p className="text-justify mb-2.5" data-aos="fade-up">
             The Lagos and DIstrict Society of the Institute of Chartered
             Accountants of Nigeria (ICANLDS) is the premier district of the
             institute which has been in existence for over 55 years. Every other
             district were birthed from the premier district.
           </p>
 
-          <p className="mb-2.5">
+          <p className="text-justify mb-2.5" data-aos="fade-up">
             ICANLDS has produced quite a number of ICAN Presidents, and notable
             council members. it also boast of reputable professionals from
             amongst the top tiers in auditing, Oil and Gas, Energy,
@@ -23,23 +31,23 @@ const About = () => {
             patrons who are upstanding and respectable members of the society.
           </p>
 
-          <div className="vision">
+          <div className="vision" data-aos="fade-right">
             <h3 className="text-[#a2dbc7] text-xl underline underline-offset-[0.2em] my-2 uppercase">
               our vision
             </h3>
 
-            <p className="">
+            <p className="text-justify ">
               To uphold to the highest standard the honor and integrity of the
               Accouning profession as the premier district of the Insute of
               Chartered Accountants of Nigeria.
             </p>
           </div>
 
-          <div className="mission">
+          <div className="mission" data-aos="fade-left">
             <h3 className="text-blue-700 text-xl underline underline-offset-[0.2em] my-2 uppercase">
               mission
             </h3>
-            <p className="">
+            <p className="text-justify ">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla
               dicta sapiente repudiandae optio rem ut animi. Quibusdam eius
               placeat, unde ipsum praesentium maiores distinctio nisi doloremque
@@ -47,8 +55,8 @@ const About = () => {
             </p>
           </div>
 
-          <div className="my-4">
-            <p className="">
+          <div className="my-4" data-aos="fade-right">
+            <p className="text-justify ">
               The secretariat of the ICAN Lagos and District Society is
               currently loacted on 106/110 Lewis Street, Obalende, Lagos Island
               on the 5th Floor.

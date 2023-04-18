@@ -6,7 +6,7 @@ const BlogLinks = () => {
       <div className="mx-auto container">
         <div className="lg:h-[100vh] px-6 pt-[7rem]">
           <h3 className="text-gray-00 text-3xl">Article Title</h3>
-          <p className="text-gray-00 my-5">
+          <p className="text-gray-00 my-5 text-justify">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero esse
             mollitia asperiores aliquam ut! Quisquam debitis itaque cupiditate
             voluptatem fuga deserunt ipsam voluptatibus illum blanditiis in

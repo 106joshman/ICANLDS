@@ -125,8 +125,8 @@ const Navbar = () => {
               ></button>
             </div>
             <div className="modal-body relative p-4 text-black text-lg">
-              <p className="mb-2.5">Dear Professional Colleague,</p>
-              <p className="mb-2">
+              <p className="text-justify mb-2.5">Dear Professional Colleague,</p>
+              <p className="text-justify mb-2">
                 We are very pleased that you would like to join the Lagos &
                 District Society of The Institute of Chartered Accountants of
                 Nigeria. The Lagos & District Society of ICAN is one of the
@@ -134,13 +134,13 @@ const Navbar = () => {
                 the members working or living on Lagos Island, Ikoyi, Victoria
                 Island, Lekki and Ajah.
               </p>
-              <p className="mb-4">
+              <p className="text-justify mb-4">
                 Our members’ meeting comes up on
                 <strong> second Thursday of every month</strong> at the Study
                 Center of the National Open University of Nigeria, 114/116,
                 Ahmadu Bello Way, Victoria Island, Lagos.
               </p>
-              <p className="mb-2">
+              <p className="text-justify mb-2">
                 {" "}
                 Kindly fill and submit the membership form via this link{" "}
                 <a
@@ -158,7 +158,7 @@ const Navbar = () => {
                 ICAN Lagos & District Society. Payment can be made at the bank
                 or via transfer into any of the District Accounts.
               </p>
-              <p className="mb-2">
+              <p className="text-justify mb-2">
                 Please find the account details below: <br />{" "}
                 <strong> First Bank Account No: 2017594673</strong> <br />{" "}
                 <strong> Zenith Bank Account No: 1017471043</strong>. <br />{" "}

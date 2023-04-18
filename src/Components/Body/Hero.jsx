@@ -1,4 +1,6 @@
-import React from "react";
+import React, { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import { Carousel } from "react-responsive-carousel";
 import Image1 from "../../assets/Hero-Images/IMG_5069.JPG";
@@ -11,6 +13,11 @@ import ChairmanSpeech from "./ChairmanSpeech";
 // import HeroImage from "../../assets/Hero.jpg";
 
 const Hero = () => {
+  useEffect(() => {
+    AOS.init();
+    AOS.refresh();
+  }, []);
+
   return (
     <section id="home" className="">
       <div
@@ -22,19 +29,27 @@ const Hero = () => {
       >
         <div
           className="absolute top-0 right-0 bottom-0 left-0 w-full h-full overflow-hidden bg-fixed"
-          style={{ backgroundColor: "rgba(0, 0, 0, 0.3)" }}
+          style={{ backgroundColor: "rgba(0, 0, 0, 0.2)" }}
         >
-          <div className="flex justify-center items-center h-full">
+          {/* <div className="flex justify-center items-center h-full">
             <div className="text-white ">
-              {/* <h2 className="font-semibold text-7xl mb-4 text-transparent bg-clip-text bg-gradient-to-r from-[#5ce1e6] to-[#233e8c]">
+              <h2
+                data-aos="fade-down"
+                data-aos-duration="2000"
+                className="font-semibold text-7xl mb-4 text-transparent bg-clip-text bg-white"
+              >
                 Welcome
               </h2>
-              <h4 className="font-semibold text-4xl mb-6 text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-pink-500">
+              <h4
+                data-aos="fade-right"
+                data-aos-duration="2000"
+                className="font-semibold text-4xl mb-6 text-transparent bg-clip-text bg-white"
+              >
                 to ICANLDS
-              </h4> */}
-              {/* <img src={HeroImage} alt="" srcSet="" />  cde7f7, a2dbc7, 5ce1e6, 233e8c*/}
+              </h4>
+              {/* <img src={HeroImage} alt="" srcSet="" />  cde7f7, a2dbc7, 5ce1e6, 233e8c*
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
       <Carousel
@@ -144,7 +159,7 @@ const Hero = () => {
           <span className="visually-hidden">Next</span>
         </button>
       </div> */}
-      <ChairmanSpeech/>
+      <ChairmanSpeech />
     </section>
   );
 };
