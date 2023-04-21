@@ -9,30 +9,50 @@ const About = () => {
   }, []);
   return (
     <section id="about">
-      <div className="mx-auto container text-gray-100">
+      <div className="mx-ato conainer bg-[#cde7f7] text-black">
         <div className=" p-6">
-          <h3 className="mb-2 text-xl" data-aos="fade-right">
-            ICAN LAGOS AND DISTRICT SOCIETY
+          <h3 className="mb-5 text-5xl" data-aos="fade-down">
+            About Us
           </h3>
-          <p className="text-justify mb-2.5" data-aos="fade-up">
-            The Lagos and DIstrict Society of the Institute of Chartered
-            Accountants of Nigeria (ICANLDS) is the premier district of the
-            institute which has been in existence for over 55 years. Every other
-            district were birthed from the premier district.
+
+          <p className="text-justify mb-3" data-aos="fade-up">
+            The Lagos and District Society of the Institute of Chartered
+            Accountants of Nigeria (ICAN) is one of the largest and most active
+            branches of the organization. It was established in 1967 as a local
+            branch of ICAN with the purpose of promoting the development of the
+            accounting profession and supporting its members in the Lagos area
+            which also makes it the premier district of the Institute.
           </p>
 
-          <p className="text-justify mb-2.5" data-aos="fade-up">
-            ICANLDS has produced quite a number of ICAN Presidents, and notable
-            council members. it also boast of reputable professionals from
-            amongst the top tiers in auditing, Oil and Gas, Energy,
-            telecommunication and the Banking sector just to mention a few. It
-            also has the Oniru of Iru land HRM KABIYESI OBA ABDULWASIU GBOLAHAN
-            AJASA LAWAL as it grand Patron who is also supported by six(6) other
-            patrons who are upstanding and respectable members of the society.
+          <p className="text-justify mb-3" data-aos="fade-up">
+            ICANLDS have produced quite a number of impeccable Past Presidents
+            of the Institue, and notable council members. it also boast of
+            reputable professionals from amongst the top tiers in auditing, Oil
+            and Gas, Energy, telecommunication and the Banking sector just to
+            mention a few. It also has the Oniru of Iru land HRM KABIYESI OBA
+            ABDULWASIU GBOLAHAN AJASA LAWAL as it grand Patron who is also
+            supported by six(6) other patrons who are upstanding and respectable
+            members of the society.
           </p>
 
-          <div className="vision" data-aos="fade-right">
-            <h3 className="text-[#a2dbc7] text-xl underline underline-offset-[0.2em] my-2 uppercase">
+          <p className="text-justify mb-3" data-aos="fade-up">
+            Over the years, the Lagos and District Society has played a
+            significant role in promoting the goals and objectives of ICAN, and
+            in providing support and services to its members. The society offers
+            a range of educational and professional development programs,
+            including seminars, workshops, and training courses, as well as
+            networking opportunities and other events. In addition, the Lagos
+            and District Society has been instrumental in raising awareness of
+            accounting and financial issues among the general public and
+            promoting the importance of good financial management. Today, the
+            society continues to play a vital role in supporting the development
+            of the accounting profession in Nigeria, and in promoting the
+            highest standards of professional conduct and competence among its
+            members.
+          </p>
+
+          <div className="vision mb-3" data-aos="fade-down">
+            <h3 className="text-[#233e8c] text-2xl underline underline-offset-[0.2em] my-2 uppercase">
               our vision
             </h3>
 
@@ -43,8 +63,8 @@ const About = () => {
             </p>
           </div>
 
-          <div className="mission" data-aos="fade-left">
-            <h3 className="text-blue-700 text-xl underline underline-offset-[0.2em] my-2 uppercase">
+          <div className="mission mb-5" data-aos="fade-down">
+            <h3 className="text-[#233e8c] text-2xl underline underline-offset-[0.2em] my-2 uppercase">
               mission
             </h3>
             <p className="text-justify ">
@@ -55,284 +75,316 @@ const About = () => {
             </p>
           </div>
 
-          <div className="my-4" data-aos="fade-right">
+          {/* <div className="my-4" data-aos="fade-right">
             <p className="text-justify ">
               The secretariat of the ICAN Lagos and District Society is
               currently loacted on 106/110 Lewis Street, Obalende, Lagos Island
               on the 5th Floor.
             </p>
-          </div>
+          </div> */}
 
-          <div class="tablee flex flex-col bg-[#242424] text-green-400">
-            <div class="overflow-x-auto sm:-mx-6 lg:-mx-8">
-              <div class="inline-block min-w-full py-5 sm:px-6 lg:px-8">
-                <div class="overflow-hidden">
-                  <table class="min-w-full text-center text-sm font-light">
-                    <thead class="border-b bg-neutral-800 font-medium text-white dark:border-neutral-500 dark:bg-neutral-900">
+          <div className="tablee flex flex-col bg-inherit text-black">
+            <div className="overflow-x-auto sm:-mx-6 lg:-mx-8">
+              <div className="inline-block min-w-full py-5 sm:px-6 lg:px-8">
+                <div className="overflow-hidden">
+                  <table className="min-w-full text-center text-sm font-light">
+                    <thead className="border-b bg-gray-500 font-medium text-white dark:border-neutral-500 ark:bg-neutral-900">
                       <tr>
-                        <th scope="col" class=" px-6 py-4">
+                        <th scope="col" className=" px-6 py-4">
                           #
                         </th>
-                        <th scope="col" class="text-start px-6 py-4">
+                        <th scope="col" className="text-start px-6 py-4">
                           Name
                         </th>
-                        <th scope="col" class=" px-6 py-4">
+                        <th scope="col" className=" text-start px-6 py-4">
                           Position
                         </th>
-                        <th scope="col" class=" px-6 py-4">
+                        {/* <th scope="col" className=" px-6 py-4">
                           Year
-                        </th>
+                        </th> */}
                       </tr>
                     </thead>
                     <tbody>
-                      <tr class="border-b dark:border-neutral-500">
-                        <td class="whitespace-nowrap  px-6 py-4 font-medium">
+                      <tr className="border-b dark:border-neutral-500">
+                        <td className="whitespace-nowrap  px-6 py-4 font-medium">
                           1
                         </td>
-                        <td class="whitespace-nowrap text-start px-6 py-4">
+                        <td className="whitespace-nowrap text-start px-6 py-4">
                           Chief Ebenezer F. Oke, FCA (Late)
                         </td>
-                        <td class="whitespace-nowrap  px-6 py-4">
-                          Past President
+                        <td className="whitespace-nowrap px-6 py-4 text-start">
+                          Past Chairman
                         </td>
-                        <td class="whitespace-nowrap  px-6 py-4">
+                        {/* <td className="whitespace-nowrap  px-6 py-4">
                           1988 - 1989
-                        </td>
+                        </td> */}
                       </tr>
-                      <tr class="border-b dark:border-neutral-500">
-                        <td class="whitespace-nowrap  px-6 py-4 font-medium">
+                      <tr className="border-b dark:border-neutral-500">
+                        <td className="whitespace-nowrap  px-6 py-4 font-medium">
                           2
                         </td>
-                        <td class="whitespace-nowrap text-start px-6 py-4">
+                        <td className="whitespace-nowrap text-start px-6 py-4">
                           Pastor Demola Somorin, FCA
                         </td>
-                        <td class="whitespace-nowrap  px-6 py-4">Chairman</td>
-                        <td class="whitespace-nowrap  px-6 py-4">
-                          1984 - 1990
+                        <td className="whitespace-nowrap px-6 py-4 text-start">
+                          Past Chairman
                         </td>
+                        {/* <td className="whitespace-nowrap  px-6 py-4">
+                          1984 - 1990
+                        </td> */}
                       </tr>
-                      <tr class="border-b dark:border-neutral-500">
-                        <td class="whitespace-nowrap  px-6 py-4 font-medium">
+                      <tr className="border-b dark:border-neutral-500">
+                        <td className="whitespace-nowrap  px-6 py-4 font-medium">
                           3
                         </td>
-                        <td class="whitespace-nowrap text-start px-6 py-4">
+                        <td className="whitespace-nowrap text-start px-6 py-4">
                           Mr. Emmanuel Ijewere, FCA
                         </td>
-                        <td class="whitespace-nowrap  px-6 py-4">
-                          Past President
+                        <td className="whitespace-nowrap px-6 py-4 text-start">
+                          Past Chairman
                         </td>
-                        <td class="whitespace-nowrap  px-6 py-4">
+                        {/* <td className="whitespace-nowrap  px-6 py-4">
                           1996 - 1997
-                        </td>
+                        </td> */}
                       </tr>
-                      <tr class="border-b dark:border-neutral-500">
-                        <td class="whitespace-nowrap  px-6 py-4 font-medium">
+                      <tr className="border-b dark:border-neutral-500">
+                        <td className="whitespace-nowrap  px-6 py-4 font-medium">
                           4
                         </td>
-                        <td class="whitespace-nowrap text-start px-6 py-4">
+                        <td className="whitespace-nowrap text-start px-6 py-4">
                           Chief Bisi Fabusoye, FCA (Late)
                         </td>
-                        <td class="whitespace-nowrap  px-6 py-4">
-                          Past President
+                        <td className="whitespace-nowrap px-6 py-4 text-start">
+                          Past Chairman
                         </td>
-                        <td class="whitespace-nowrap  px-6 py-4">
+                        {/* <td className="whitespace-nowrap  px-6 py-4">
                           1996 - 1997
-                        </td>
+                        </td> */}
                       </tr>
-                      <tr class="border-b dark:border-neutral-500">
-                        <td class="whitespace-nowrap  px-6 py-4 font-medium">
+                      <tr className="border-b dark:border-neutral-500">
+                        <td className="whitespace-nowrap  px-6 py-4 font-medium">
                           5
                         </td>
-                        <td class="whitespace-nowrap text-start px-6 py-4">
+                        <td className="whitespace-nowrap text-start px-6 py-4">
                           Prince Adebanjo Babington-Ashaye, FCA (Late)
                         </td>
-                        <td class="whitespace-nowrap  px-6 py-4">
-                          Past President
+                        <td className="whitespace-nowrap px-6 py-4 text-start">
+                          Past Chairman
                         </td>
-                        <td class="whitespace-nowrap  px-6 py-4">
+                        {/* <td className="whitespace-nowrap  px-6 py-4">
                           2007 - 2008
-                        </td>
+                        </td> */}
                       </tr>
 
-                      <tr class="border-b dark:border-neutral-500">
-                        <td class="whitespace-nowrap  px-6 py-4 font-medium">
+                      <tr className="border-b dark:border-neutral-500">
+                        <td className="whitespace-nowrap  px-6 py-4 font-medium">
                           6
                         </td>
-                        <td class="whitespace-nowrap text-start px-6 py-4 ">
+                        <td className="whitespace-nowrap text-start px-6 py-4 ">
                           Mr. Christopher Keshiro, FCA
                         </td>
-                        <td class="whitespace-nowrap  px-6 py-4">Chairman</td>
-                        <td class="whitespace-nowrap  px-6 py-4">
-                          1997 - 1999
+                        <td className="whitespace-nowrap px-6 py-4 text-start">
+                          Past Chairman
                         </td>
+                        {/* <td className="whitespace-nowrap  px-6 py-4">
+                          1997 - 1999
+                        </td> */}
                       </tr>
-                      <tr class="border-b dark:border-neutral-500">
-                        <td class="whitespace-nowrap  px-6 py-4 font-medium">
+                      <tr className="border-b dark:border-neutral-500">
+                        <td className="whitespace-nowrap  px-6 py-4 font-medium">
                           7
                         </td>
-                        <td class="whitespace-nowrap text-start px-6 py-4 ">
+                        <td className="whitespace-nowrap text-start px-6 py-4 ">
                           Mr. Wunmi Adetuyi, FCA
                         </td>
-                        <td class="whitespace-nowrap  px-6 py-4">Chairman</td>
-                        <td class="whitespace-nowrap  px-6 py-4">
-                          1999 - 2001
+                        <td className="whitespace-nowrap px-6 py-4 text-start">
+                          Past Chairman
                         </td>
+                        {/* <td className="whitespace-nowrap  px-6 py-4">
+                          1999 - 2001
+                        </td> */}
                       </tr>
-                      <tr class="border-b dark:border-neutral-500">
-                        <td class="whitespace-nowrap  px-6 py-4 font-medium">
+                      <tr className="border-b dark:border-neutral-500">
+                        <td className="whitespace-nowrap  px-6 py-4 font-medium">
                           8
                         </td>
-                        <td class="whitespace-nowrap text-start px-6 py-4 ">
+                        <td className="whitespace-nowrap text-start px-6 py-4 ">
                           Dr. Remi Folorunsho, FCA
                         </td>
-                        <td class="whitespace-nowrap  px-6 py-4">Chairman</td>
-                        <td class="whitespace-nowrap  px-6 py-4">
-                          2001 - 2003
+                        <td className="whitespace-nowrap px-6 py-4 text-start">
+                          Past Chairman
                         </td>
+                        {/* <td className="whitespace-nowrap  px-6 py-4">
+                          2001 - 2003
+                        </td> */}
                       </tr>
-                      <tr class="border-b dark:border-neutral-500">
-                        <td class="whitespace-nowrap  px-6 py-4 font-medium">
+                      <tr className="border-b dark:border-neutral-500">
+                        <td className="whitespace-nowrap  px-6 py-4 font-medium">
                           9
                         </td>
-                        <td class="whitespace-nowrap text-start px-6 py-4 ">
+                        <td className="whitespace-nowrap text-start px-6 py-4 ">
                           Mr. Hope Osueke, FCA
                         </td>
-                        <td class="whitespace-nowrap  px-6 py-4">Chairman</td>
-                        <td class="whitespace-nowrap  px-6 py-4">
-                          2003 - 2005
+                        <td className="whitespace-nowrap px-6 py-4 text-start">
+                          Past Chairman
                         </td>
+                        {/* <td className="whitespace-nowrap  px-6 py-4">
+                          2003 - 2005
+                        </td> */}
                       </tr>
-                      <tr class="border-b dark:border-neutral-500">
-                        <td class="whitespace-nowrap  px-6 py-4 font-medium">
+                      <tr className="border-b dark:border-neutral-500">
+                        <td className="whitespace-nowrap  px-6 py-4 font-medium">
                           10
                         </td>
-                        <td class="whitespace-nowrap text-start px-6 py-4 ">
+                        <td className="whitespace-nowrap text-start px-6 py-4 ">
                           Mr. Sola Oyetayo, FCA
                         </td>
-                        <td class="whitespace-nowrap  px-6 py-4">Chairman</td>
-                        <td class="whitespace-nowrap  px-6 py-4">
-                          2005 - 2007
+                        <td className="whitespace-nowrap px-6 py-4 text-start">
+                          Past Chairman
                         </td>
+                        {/* <td className="whitespace-nowrap  px-6 py-4">
+                          2005 - 2007
+                        </td> */}
                       </tr>
-                      <tr class="border-b dark:border-neutral-500">
-                        <td class="whitespace-nowrap  px-6 py-4 font-medium">
+                      <tr className="border-b dark:border-neutral-500">
+                        <td className="whitespace-nowrap  px-6 py-4 font-medium">
                           11
                         </td>
-                        <td class="whitespace-nowrap text-start px-6 py-4 ">
+                        <td className="whitespace-nowrap text-start px-6 py-4 ">
                           Mr. Tunde Popoola, FCA
                         </td>
-                        <td class="whitespace-nowrap  px-6 py-4">Chairman</td>
-                        <td class="whitespace-nowrap  px-6 py-4">
-                          2007 - 2009
+                        <td className="whitespace-nowrap px-6 py-4 text-start">
+                          Past Chairman
                         </td>
+                        {/* <td className="whitespace-nowrap  px-6 py-4">
+                          2007 - 2009
+                        </td> */}
                       </tr>
-                      <tr class="border-b dark:border-neutral-500">
-                        <td class="whitespace-nowrap  px-6 py-4 font-medium">
+                      <tr className="border-b dark:border-neutral-500">
+                        <td className="whitespace-nowrap  px-6 py-4 font-medium">
                           12
                         </td>
-                        <td class="whitespace-nowrap text-start px-6 py-4 ">
+                        <td className="whitespace-nowrap text-start px-6 py-4 ">
                           Mr. Dayo Elliot Babatunde, FCA
                         </td>
-                        <td class="whitespace-nowrap  px-6 py-4">Chairman</td>
-                        <td class="whitespace-nowrap  px-6 py-4">
-                          2009 - 2011
+                        <td className="whitespace-nowrap px-6 py-4 text-start">
+                          Past Chairman
                         </td>
+                        {/* <td className="whitespace-nowrap  px-6 py-4">
+                          2009 - 2011
+                        </td> */}
                       </tr>
-                      <tr class="border-b dark:border-neutral-500">
-                        <td class="whitespace-nowrap  px-6 py-4 font-medium">
+                      <tr className="border-b dark:border-neutral-500">
+                        <td className="whitespace-nowrap  px-6 py-4 font-medium">
                           13
                         </td>
-                        <td class="whitespace-nowrap text-start px-6 py-4 ">
+                        <td className="whitespace-nowrap text-start px-6 py-4 ">
                           Chief Patrick Chibo Akujobi, FCA (Late)
                         </td>
-                        <td class="whitespace-nowrap  px-6 py-4">Chairman</td>
-                        <td class="whitespace-nowrap  px-6 py-4">
-                          2011 - 2013
+                        <td className="whitespace-nowrap px-6 py-4 text-start">
+                          Past Chairman
                         </td>
+                        {/* <td className="whitespace-nowrap  px-6 py-4">
+                          2011 - 2013
+                        </td> */}
                       </tr>
-                      <tr class="border-b dark:border-neutral-500">
-                        <td class="whitespace-nowrap  px-6 py-4 font-medium">
+                      <tr className="border-b dark:border-neutral-500">
+                        <td className="whitespace-nowrap  px-6 py-4 font-medium">
                           14
                         </td>
-                        <td class="whitespace-nowrap text-start px-6 py-4 ">
+                        <td className="whitespace-nowrap text-start px-6 py-4 ">
                           Mr. Kola Olaitan, FCA
                         </td>
-                        <td class="whitespace-nowrap  px-6 py-4">Chairman</td>
-                        <td class="whitespace-nowrap  px-6 py-4">
-                          2013 - 2015
+                        <td className="whitespace-nowrap px-6 py-4 text-start">
+                          Past Chairman
                         </td>
+                        {/* <td className="whitespace-nowrap  px-6 py-4">
+                          2013 - 2015
+                        </td> */}
                       </tr>
-                      <tr class="border-b dark:border-neutral-500">
-                        <td class="whitespace-nowrap  px-6 py-4 font-medium">
+                      <tr className="border-b dark:border-neutral-500">
+                        <td className="whitespace-nowrap  px-6 py-4 font-medium">
                           15
                         </td>
-                        <td class="whitespace-nowrap text-start px-6 py-4 ">
+                        <td className="whitespace-nowrap text-start px-6 py-4 ">
                           Mr. Joshua Ohioma, FCA
                         </td>
-                        <td class="whitespace-nowrap  px-6 py-4">Chairman</td>
-                        <td class="whitespace-nowrap  px-6 py-4">
-                          2015 - 2016
+                        <td className="whitespace-nowrap px-6 py-4 text-start">
+                          Past Chairman
                         </td>
+                        {/* <td className="whitespace-nowrap  px-6 py-4">
+                          2015 - 2016
+                        </td> */}
                       </tr>
-                      <tr class="border-b dark:border-neutral-500">
-                        <td class="whitespace-nowrap  px-6 py-4 font-medium">
+                      <tr className="border-b dark:border-neutral-500">
+                        <td className="whitespace-nowrap  px-6 py-4 font-medium">
                           16
                         </td>
-                        <td class="whitespace-nowrap text-start px-6 py-4 ">
+                        <td className="whitespace-nowrap text-start px-6 py-4 ">
                           Lydia H. Ajayi (Mrs), FCA
                         </td>
-                        <td class="whitespace-nowrap  px-6 py-4">Chairman</td>
-                        <td class="whitespace-nowrap  px-6 py-4">
-                          2016 - 2018
+                        <td className="whitespace-nowrap px-6 py-4 text-start">
+                          Past Chairman
                         </td>
+                        {/* <td className="whitespace-nowrap  px-6 py-4">
+                          2016 - 2018
+                        </td> */}
                       </tr>
-                      <tr class="border-b dark:border-neutral-500">
-                        <td class="whitespace-nowrap  px-6 py-4 font-medium">
+                      <tr className="border-b dark:border-neutral-500">
+                        <td className="whitespace-nowrap  px-6 py-4 font-medium">
                           17
                         </td>
-                        <td class="whitespace-nowrap text-start px-6 py-4 ">
+                        <td className="whitespace-nowrap text-start px-6 py-4 ">
                           Omolola Funmi Oke (Mrs), FCA
                         </td>
-                        <td class="whitespace-nowrap  px-6 py-4">Chairman</td>
-                        <td class="whitespace-nowrap  px-6 py-4">
-                          2018 - 2020
+                        <td className="whitespace-nowrap px-6 py-4 text-start">
+                          Past Chairman
                         </td>
+                        {/* <td className="whitespace-nowrap  px-6 py-4">
+                          2018 - 2020
+                        </td> */}
                       </tr>
-                      <tr class="border-b dark:border-neutral-500">
-                        <td class="whitespace-nowrap  px-6 py-4 font-medium">
+                      <tr className="border-b dark:border-neutral-500">
+                        <td className="whitespace-nowrap  px-6 py-4 font-medium">
                           18
                         </td>
-                        <td class="whitespace-nowrap text-start px-6 py-4 ">
+                        <td className="whitespace-nowrap text-start px-6 py-4 ">
                           Constance Nwokejiobi (Mrs), FCA
                         </td>
-                        <td class="whitespace-nowrap  px-6 py-4">Chairman</td>
-                        <td class="whitespace-nowrap  px-6 py-4">
-                          2020 - 2021
+                        <td className="whitespace-nowrap px-6 py-4 text-start">
+                          Past Chairman
                         </td>
+                        {/* <td className="whitespace-nowrap  px-6 py-4">
+                          2020 - 2021
+                        </td> */}
                       </tr>
-                      <tr class="border-b dark:border-neutral-500">
-                        <td class="whitespace-nowrap  px-6 py-4 font-medium">
+                      <tr className="border-b dark:border-neutral-500">
+                        <td className="whitespace-nowrap  px-6 py-4 font-medium">
                           19
                         </td>
-                        <td class="whitespace-nowrap text-start px-6 py-4 ">
+                        <td className="whitespace-nowrap text-start px-6 py-4 ">
                           Mr. John Isesele, FCA
                         </td>
-                        <td class="whitespace-nowrap  px-6 py-4">Chairman</td>
-                        <td class="whitespace-nowrap  px-6 py-4">
-                          2021 - 2022
+                        <td className="whitespace-nowrap px-6 py-4 text-start">
+                          Immediate Past Chairman
                         </td>
+                        {/* <td className="whitespace-nowrap  px-6 py-4">
+                          2021 - 2022
+                        </td> */}
                       </tr>
-                      <tr class="border-b dark:border-neutral-500">
-                        <td class="whitespace-nowrap  px-6 py-4 font-medium">
+                      <tr className="border-b dark:border-neutral-500">
+                        <td className="whitespace-nowrap  px-6 py-4 font-medium">
                           20
                         </td>
-                        <td class="whitespace-nowrap text-start px-6 py-4 ">
+                        <td className="whitespace-nowrap text-start px-6 py-4 ">
                           Mr. Alesta Wilcox, FCA
                         </td>
-                        <td class="whitespace-nowrap  px-6 py-4">Chairman</td>
-                        <td class="whitespace-nowrap  px-6 py-4">
-                          2022 - Present
+                        <td className="whitespace-nowrap px-6 py-4 text-start">
+                          Chairman
                         </td>
+                        {/* <td className="whitespace-nowrap  px-6 py-4">
+                          2022 - Present
+                        </td> */}
                       </tr>
                     </tbody>
                   </table>

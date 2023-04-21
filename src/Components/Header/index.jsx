@@ -74,12 +74,12 @@ const Navbar = () => {
         </div>
 
         <div className="navLinks md:order-1 w-full md:block md:w-auto">
-          <ul className="hidden lg:flex flex-col p-4 mt-4 justify-between md:flex-row md:space-x-8 rounded-md md:mt-0 md:text-sm md:font-medium">
+          <ul className="hidden lg:flex flex-col p-4 mt-4 justify-between md:flex-row md:space-x-8 rounded-md md:mt-0 md:font-medium">
             {navLinks.map((navItems, index) => {
               return (
                 <li
                   key={index}
-                  className="block text-lg cursor-pointer py-2 px-4 "
+                  className="block text-xl cursor-pointer py-2 px-4 "
                 >
                   <Link
                     activeclassname="active"

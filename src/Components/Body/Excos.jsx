@@ -16,7 +16,7 @@ import Exco1 from "../../assets/Exco/ChristopherEhiogie.jpg";
 const Excos = () => {
   return (
     <div className="bg-[#cde7f7]">
-      <div className="container px-6 mx-auto ">
+      <div className="continer px-6 mxauto ">
         {/* <!-- Section: Design Block --> */}
         <section className="pt-16 pb-5 text-center">
           <h2 className="text-3xl text-black font-bold mb-12">

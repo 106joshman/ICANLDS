@@ -3,7 +3,7 @@ import ChairMan from "../../../assets/Exco/AlestaWIlcox.jpg";
 const Speech = () => {
   return (
     <section className="relative bg-[#fff]">
-      <div className=" mx-auto container">
+      <div className=" mxauto continer">
         {/* Chairman's Speech */}
         <div className="flex flex-col lg:h-[100vh] lg:flex-row justify-between items-center px-6 pt-[6rem] lg:pt-6">
           <div className="image">

@@ -36,7 +36,7 @@ const Blog = () => {
   return (
     // <!-- Container Start -->
     <div className="bg-[#a2dbc7]">
-      <div id="blog" className="container px-6 mx-auto">
+      <div id="blog" className="contaier px-6 mx-auto">
         {/* <!-- Section: Design Block --> */}
         <section className="mb32 text-gray-800">
           <div className=" text-center">
