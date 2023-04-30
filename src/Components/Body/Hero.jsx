@@ -23,10 +23,10 @@ const Hero = () => {
     <section id="home" className="">
       <div
         className="p-12 md:hidden text-center relative overflow-hidden bg-no-repeat bg rounded-l bg-hero-image h-screen bg-center bg-contain bg-[#233e8c]"
-        style={{
-          // backgroundImage: "url('../../assets/Hero.jpg')",
-          height: "100vh",
-        }}
+        // style={{
+        //   // backgroundImage: "url('../../assets/Hero.jpg')",
+        //   height: "100vh",
+        // }}
       ></div>
       <Carousel
         className="hidden md:flex"
@@ -65,10 +65,10 @@ const Hero = () => {
       </Carousel>
 
       <div
-        className="absolute top-0 right-0 bottom-0 left-0 w-full h-[100vh] lg:h-[132vh] overflow-hidden bg-fixed"
+        className="absolute top-0 right-0 bottom-0 left-0 w-full h-[100vh] lg:h-[110vh] overflow-hidden bg-fixed"
         style={{ backgroundColor: "rgba(0, 0, 0, 0.2)" }}
       >
-        <div className="flex justify-center border border-none w-[85%] md:w-[65%] p-5 h-[300px] mx-auto rounded-lg items-center mt-[180px] bg-[blue]/20">
+        <div className="flex justify-center border border-none w-[85%] md:w-[65%] lg:w-[55%] p-5 h-[300px] mx-auto rounded-lg items-center mt-[277px] md:mt-[127px] lg:mt-[277px] bg-[blue]/20">
           <div className="text-white text-center">
             <h2
               data-aos="fade-down"

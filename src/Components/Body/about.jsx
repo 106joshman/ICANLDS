@@ -25,6 +25,15 @@ const About = () => {
           </p>
 
           <p className="text-justify mb-3" data-aos="fade-up">
+            ICAN Lagos and District Society (ICANLDS) was established by Herbert
+            William Bond, FCA. He was part of the group of Accountants who
+            founded the Institute of Chartered Accountants of Nigeria (ICAN) in
+            1960. He served as the first eident of ICAN from 1965 to 1967. He
+            was born in 1893 in the United Kingdom and arrived in Nigeria in
+            1921, where he began his career as an accountant.
+          </p>
+
+          <p className="text-justify mb-3" data-aos="fade-up">
             ICANLDS have produced quite a number of impeccable Past Presidents
             of the Institue, and notable council members. it also boast of
             reputable professionals from amongst the top tiers in auditing, Oil
@@ -57,9 +66,7 @@ const About = () => {
             </h3>
 
             <p className="text-justify ">
-              To uphold to the highest standard the honor and integrity of the
-              Accouning profession as the premier district of the Insute of
-              Chartered Accountants of Nigeria.
+              Becoming the hope of the Institute at the city of excellence.
             </p>
           </div>
 
@@ -68,20 +75,10 @@ const About = () => {
               mission
             </h3>
             <p className="text-justify ">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla
-              dicta sapiente repudiandae optio rem ut animi. Quibusdam eius
-              placeat, unde ipsum praesentium maiores distinctio nisi doloremque
-              laboriosam sint voluptatibus magni.
+              To produce and nature global best Chartered Accountants in all
+              walks of life in the interest of humanity.
             </p>
           </div>
-
-          {/* <div className="my-4" data-aos="fade-right">
-            <p className="text-justify ">
-              The secretariat of the ICAN Lagos and District Society is
-              currently loacted on 106/110 Lewis Street, Obalende, Lagos Island
-              on the 5th Floor.
-            </p>
-          </div> */}
 
           <div className="tablee flex flex-col bg-inherit text-black">
             <div className="overflow-x-auto sm:-mx-6 lg:-mx-8">

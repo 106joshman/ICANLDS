@@ -67,9 +67,9 @@ const Excos = () => {
             <div className="mb-12">
               <img
                 src={GenSec}
-                className="rounded-full mx-auto shadow-lg mb-4"
+                className="rounded-full mx-auto shadow-lg mb-4 lg:w-[37%]"
                 alt=""
-                style={{ width: "60%" }}
+                style={{ width: "60%", height: 215 }}
               />
               <p className="font-bold mb-1 text-black">Toyin Ogunlowo, FCA</p>
               <p className="text-gray-500">General Secretary</p>
@@ -78,7 +78,7 @@ const Excos = () => {
             <div className="mb-12">
               <img
                 src={Treasurer}
-                className="rounded-full mx-auto shadow-lg mb-4"
+                className="rounded-full mx-auto shadow-lg mb-4 lg:w-[37%]"
                 alt=""
                 style={{ maxWidth: "60%", height: 215 }}
                 // loading="lazy"
@@ -148,7 +148,7 @@ const Excos = () => {
                 // loading="lazy"
               />
               <p className="font-bold mb-1 text-black">
-                Oluwaseun Ileols-Olaseni, FCA
+                Oluwaseun Ileola-Olaseni, FCA
               </p>
               <p className="text-gray-500">Asst. General Secretary</p>
             </div>
@@ -184,7 +184,7 @@ const Excos = () => {
             <div className="mb-12">
               <img
                 src={Ipc}
-                className="rounded-full mx-auto shadow-lg mb-4"
+                className="rounded-full mx-auto shadow-lg mb-4 lg:w-[37%]"
                 alt=""
                 style={{ maxWidth: "60%" }}
                 // loading="lazy"

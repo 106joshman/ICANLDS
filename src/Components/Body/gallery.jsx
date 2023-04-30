@@ -29,8 +29,8 @@ const Gallery = () => {
   ];
 
   return (
-    <section id="gallery" className="bg-white">
-      <p className="my-4 p-3">Capture memories and events in billion colours ✨</p>
+    <section id="gallery" className="bg-white p-5">
+      {/* <p className="my-4 p-3">Capture memories and events in billion colours ✨</p> */}
       <div className="gallery">
         <Carousel
           autoPlay={true}

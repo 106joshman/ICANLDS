@@ -116,7 +116,7 @@ const Footer = () => {
               </Link>
             </div>
             <p className="text-start">
-              ICAN Lagos & District Society, The Premier district.
+              ICAN Lagos & District Society, <br /> The Premier district.
             </p>
           </div>
 
@@ -127,7 +127,7 @@ const Footer = () => {
 
             <p className="mb-4 text-start">
               Thank you for showing interest in joing ICAN Lagos & Districty
-              Society, to continue kindly click on the mambership button in the
+              Society, to continue kindly click on the membership button in the
               top bar 🙂 👍🏾
             </p>
           </div>
