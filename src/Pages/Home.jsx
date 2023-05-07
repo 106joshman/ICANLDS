@@ -3,63 +3,65 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import { Carousel } from "react-responsive-carousel";
-import Image1 from "../../assets/Hero-Images/IMG_5069.JPG";
-import Image2 from "../../assets/Hero-Images/IMG_4770.JPG";
-import Image3 from "../../assets/Hero-Images/IMG_4882.JPG";
-import Image4 from "../../assets/Hero-Images/IMG_4929.JPG";
-import Image5 from "../../assets/Hero-Images/IMG_5079.JPG";
-import Image6 from "../../assets/Hero-Images/IMG_5060.JPG";
-import ADD from "../../assets/adm.png";
-import ChairmanSpeech from "./ChairmanSpeech";
+import Image1 from "../assets/Hero-Images/IMG_5069.JPG";
+import Image2 from "../assets/Hero-Images/IMG_4770.JPG";
+import Image3 from "../assets/Hero-Images/IMG_4882.JPG";
+import Image4 from "../assets/Hero-Images/IMG_4929.JPG";
+import Image5 from "../assets/Hero-Images/IMG_5079.JPG";
+import Image6 from "../assets/Hero-Images/IMG_5060.JPG";
+import ADD from "../assets/adm.png";
+import ChairmanSpeech from "./Chairman";
 // import HeroImage from "../../assets/Hero.jpg";
 
-const Hero = () => {
+const Home = () => {
   useEffect(() => {
     AOS.init();
     AOS.refresh();
   }, []);
 
   return (
-    <section id="home" className="">
-      <div
+    <section className="">
+      {/* <div className="pt-28 bg-white"></div> */}
+      {/* <div
         className="p-12 md:hidden text-center relative overflow-hidden bg-no-repeat bg rounded-l bg-hero-image h-screen bg-center bg-contain bg-[#233e8c]"
         // style={{
         //   // backgroundImage: "url('../../assets/Hero.jpg')",
         //   height: "100vh",
         // }}
-      ></div>
+      ></div> */}
       <Carousel
         className="hidden md:flex"
         showStatus={false}
         showThumbs={false}
         infiniteLoop={true}
+        // style={{ height: "100vh" }}
       >
-        <div className="grid place-items-center h-[70vh] md:h-auto">
-          <img src={ADD} className="block w-full" alt="Camera" />
+        <div className="grid place-items-center h-[70vh d:h-auto">
+          <img src={ADD} className="block w-ful" alt="Camera" />
           {/* <p className="legend">Legend 3</p> */}
         </div>
-        <div className="grid place-items-center h-[70vh] md:h-auto">
-          <img src={Image1} className="block w-full" alt="Camera" />
+        <div className="grid place-items-center h-[70vh md:h-auto">
+          <img src={Image1} className="block w-ful" alt="Camera" />
           {/* <p className="legend">Legend 1</p> */}
         </div>
-        <div className="grid place-items-center h-[70vh] md:h-auto">
-          <img src={Image2} className="block w-full" alt="Camera" />
+        <div className="grid place-items-center h-[70vh md:h-auto">
+          <img src={Image2} className="block w-ful" alt="Camera" />
           {/* <p className="legend">Legend 2</p> */}
         </div>
-        <div className="grid place-items-center h-[70vh] md:h-auto">
-          <img src={Image3} className="block w-full" alt="Camera" />
+        <div className="grid place-items-center h-[70vh md:h-auto">
+          <img src={Image3} className="block w-ful" alt="Camera" />
           {/* <p className="legend">Legend 3</p> */}
         </div>
-        <div className="grid place-items-center h-[70vh] md:h-auto">
-          <img src={Image4} className="block w-full" alt="Camera" />
+        <div className="grid place-items-center h-[70vh md:h-auto">
+          <img src={Image4} className="block w-ful" alt="Camera" />
           {/* <p className="legend">Legend 3</p> */}
         </div>
-        <div className="grid place-items-center h-[70vh] md:h-auto">
-          <img src={Image5} className="block w-full" alt="Camera" />
+        <div className="grid place-items-center h-[70vh md:h-auto">
+          <img src={Image5} className="block w-ful" alt="Camera" />
           {/* <p className="legend">Legend 3</p>*/}
         </div>
-        <div className="grid place-items-center h-[70vh] md:h-auto">
-          <img src={Image6} className="block w-full" alt="Camera" />
+        <div className="grid place-items-center h-[70vh md:h-auto">
+          <img src={Image6} className="block w-ful" alt="Camera" />
           {/* <p className="legend">Legend 3</p> */}
         </div>
       </Carousel>
@@ -90,7 +92,7 @@ const Hero = () => {
           </div>
 
           <div
-            className="modal fade fixed top-0 left-0 hidden w-full h-full outline-none overflow-x-hidden overflow-y-auto"
+            className="modal fae fixed top-0 left-0 hidden w-full h-full outline-none overflow-x-hidden overflow-y-auto"
             id="staticBackdrop"
             data-bs-backdrop="static"
             data-bs-keyboard="false"
@@ -187,4 +189,4 @@ const Hero = () => {
   );
 };
 
-export default Hero;
+export default Home;

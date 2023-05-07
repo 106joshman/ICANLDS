@@ -1,7 +1,7 @@
 import Hamburger from "hamburger-react";
 import React, { useState, useEffect } from "react";
-import { Link, animateScroll as scroll } from "react-scroll";
-// import { Link } from "react-router-dom";
+// import { Link, animateScroll as scroll } from "react-scroll";
+import { Link } from "react-router-dom";
 import { Logo } from "../Logo";
 import MobileNav from "./MobileNav";
 
@@ -11,8 +11,8 @@ const Navbar = () => {
   const [textColor, setTextColor] = useState("black");
 
   const listenScrollEvent = () => {
-    window.scrollY > 200 ? setnavColor("#252734") : setnavColor("transparent");
-    window.scrollY > 250 ? setTextColor("#ffffff") : setTextColor("black");
+    window.scrollY > 100 ? setnavColor("white") : setnavColor("transparent");
+    window.scrollY > 250 ? setTextColor("green") : setTextColor("black");
     // window.scrollY > 10 ? setnavSize("5rem") : setnavSize("10rem");
   };
 
@@ -26,37 +26,39 @@ const Navbar = () => {
   const navLinks = [
     { id: 0, name: "Home", path: "home" },
     { id: 0, name: "About", path: "about" },
-    { id: 0, name: "Blog", path: "blog" },
+    { id: 0, name: "Exco", path: "district/excos" },
+    { id: 0, name: "District Chairman", path: "district/chairman" },
+    { id: 0, name: "Library", path: "district/resources" },
     { id: 0, name: "Gallery", path: "gallery" },
     { id: 0, name: "Contact", path: "contact" },
   ];
 
   return (
-    <>
-      <nav
-        className="flex items-center fixed w-full justify-between px-2.5 md:px-10 py-4 z-[999]"
-        style={{
-          backgroundColor: navColor,
-          color: textColor,
-          // height: navSize,
-          transition: "all 1s",
-        }}
-      >
+    <header
+      className="flex items-center fixed w-full shadow-md px-6 lg:px-10 py-4 z-[999]"
+      style={{
+        backgroundColor: navColor,
+        color: textColor,
+        // height: navSize,
+        transition: "all 1s",
+      }}
+    >
+      <nav className="container mx-auto flex items-center justify-between">
         <div className="">
-          <Link to="home" spy={true} smooth={true} offset={-70} duration={500}>
+          <Link to="home">
             <Logo />
           </Link>
         </div>
 
         <div className="flex order-2">
-          <button
+          {/* <button
             type="button"
             className="text-white hidden lg:flex bg-blue-700 hover:bg-blue-800 font-medium rounded-lg text-sm px-2 py-2 text-center mr-3 lg:mr-0 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
             data-bs-toggle="modal"
             data-bs-target="#staticBackdrop"
           >
             Membership
-          </button>
+          </button> */}
 
           <div className="lg:hidden">
             <Hamburger
@@ -81,14 +83,7 @@ const Navbar = () => {
                   key={index}
                   className="block text-xl cursor-pointer py-2 px-4 "
                 >
-                  <Link
-                    activeclassname="active"
-                    to={navItems.path}
-                    spy={true}
-                    smooth={true}
-                    offset={-70}
-                    duration={500}
-                  >
+                  <Link className=" active:text-[red]" to={navItems.path}>
                     {navItems.name}
                   </Link>
                 </li>
@@ -98,8 +93,8 @@ const Navbar = () => {
         </div>
       </nav>
 
-      <div
-        className="modal fade fixed top-0 left-0 hidden w-full h-full outline-none overflow-x-hidden overflow-y-auto"
+      {/* <div
+        className="modal fade fixed top-0 left-0 z-[1055] hidden w-full h-full outline-none overflow-x-hidden overflow-y-auto"
         id="staticBackdrop"
         data-bs-backdrop="static"
         data-bs-keyboard="false"
@@ -125,7 +120,9 @@ const Navbar = () => {
               ></button>
             </div>
             <div className="modal-body relative p-4 text-black text-lg">
-              <p className="text-justify mb-2.5">Dear Professional Colleague,</p>
+              <p className="text-justify mb-2.5">
+                Dear Professional Colleague,
+              </p>
               <p className="text-justify mb-2">
                 We are very pleased that you would like to join the Lagos &
                 District Society of The Institute of Chartered Accountants of
@@ -185,11 +182,11 @@ const Navbar = () => {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
       {isOpen && (
         <MobileNav navLinks={navLinks} isOpen={isOpen} setOpen={setOpen} />
       )}
-    </>
+    </header>
   );
 };
 

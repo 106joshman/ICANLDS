@@ -1,13 +1,19 @@
-import React from "react";
-import ChairMan from "../../assets/Exco/AlestaWIlcox.jpg";
+import React, { useEffect } from "react";
+import ChairMan from "../assets/Exco/ToyinOgunlowo.jpg";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
-const ChairmanSpeech = () => {
+const Chairman = () => {
+  useEffect(() => {
+    AOS.init();
+    AOS.refresh();
+  }, []);
   return (
     <>
-      <div className=" mxauto cntainer bg-[#fff]">
+      <div className=" mx-auto container bg-[#fff]">
         {/* Chairman's Speech */}
-        <div className="flex flex-col lg:h-[100v] lg:flex-row justify-between items-center p-6">
-          <div className="image"  data-aos="zoom-in-up">
+        <div className="flex pt-32 flex-col lg:h-[100v] lg:flex-row justify-between items-center p-6">
+          <div className="image" data-aos="zoom-in-up">
             <img
               src={ChairMan}
               // src="https://mdbootstrap.com/img/new/avatars/5.jpg"
@@ -17,14 +23,16 @@ const ChairmanSpeech = () => {
               srcSet=""
             />
             <p className="flex flex-col lg:left-0 -top-20 ml-2.5 w-[350px] text-white relative">
-              <span className="text-3xl font-semibold">Alesta Wilcox, FCA</span>
-              <span className="text-base font-bold">20th Chairman</span>
+              <span className="text-3xl font-semibold">
+                Toyin Ogunlowo, FCA
+              </span>
+              <span className="text-base font-bold">21st Chairman</span>
             </p>
           </div>
           <div
             className="text lg:w-3/5"
             data-aos="zoom-in-up"
-            data-aos-duration="2000"
+            // data-aos-duration="2000"
           >
             <h3 className="text-3xl mb-4">
               Welcome to ICAN Lagos & District Society
@@ -102,4 +110,4 @@ const ChairmanSpeech = () => {
   );
 };
 
-export default ChairmanSpeech;
+export default Chairman;

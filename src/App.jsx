@@ -1,23 +1,28 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Main from "./Components/Body";
 import Footer from "./Components/Footer";
 import Header from "./Components/Header";
-import BlogLinks from "./Components/Body/blog/Articles";
-import Speech from "./Components/Body/blog/Speech";
+import Home from "./Pages/Home";
+import About from "./Pages/about";
+import Excos from "./Pages/Excos";
+import Chairman from "./Pages/Chairman";
+import Contact from "./Pages/Contact";
+import Gallery from "./Pages/gallery";
+import Blog from "./Pages/Blog";
 
 function App() {
   return (
     <Router>
-      <div className="App">
+      <div className="App bg-white">
         <Header />
         <Routes>
-          <Route path="/" element={<Main />} />
-          <Route path="/" element={<Main />} />
-          <Route path="/blog/new-electoral-committee" element={<BlogLinks />} />
-          <Route path="/blog/ican-58-president-visit" element={<Speech />} />
-          <Route path="/blog/icanlds-frsc-special-corps" element={<BlogLinks />} />
-          <Route path="/blog/catch-them-young-2022" element={<BlogLinks />} />
-          <Route path="/blog/change-of-office" element={<BlogLinks />} />
+          <Route index path="/" element={<Home />} />
+          <Route path="home" element={<Home />} />
+          <Route path="about" element={<About />} />
+          <Route path="district/excos" element={<Excos />} />
+          <Route path="district/chairman" element={<Chairman />} />
+          <Route path="district/resources" element={<Blog />} />
+          <Route path="contact" element={<Contact />} />
+          <Route path="gallery" element={<Gallery />} />
         </Routes>
         <Footer />
       </div>
