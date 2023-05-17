@@ -1,7 +1,7 @@
 import Hamburger from "hamburger-react";
 import React, { useState, useEffect } from "react";
 // import { Link, animateScroll as scroll } from "react-scroll";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import { Logo } from "../Logo";
 import MobileNav from "./MobileNav";
 
@@ -27,7 +27,7 @@ const Navbar = () => {
     { id: 0, name: "Home", path: "home" },
     { id: 0, name: "About", path: "about" },
     { id: 0, name: "Exco", path: "district/excos" },
-    { id: 0, name: "District Chairman", path: "district/chairman" },
+    { id: 0, name: "Chairman", path: "district/chairman" },
     { id: 0, name: "Library", path: "district/resources" },
     { id: 0, name: "Gallery", path: "gallery" },
     { id: 0, name: "Contact", path: "contact" },
@@ -62,9 +62,10 @@ const Navbar = () => {
 
           <div className="lg:hidden">
             <Hamburger
-              color="#5ce1e6"
+              // color="#5ce1e6"
+              color="blue"
               label="Show menu"
-              backgroundColor="gray"
+              backgroundColor="blue"
               distance="md"
               rounded
               hideOutline={false}
@@ -79,13 +80,18 @@ const Navbar = () => {
           <ul className="hidden lg:flex flex-col p-4 mt-4 justify-between md:flex-row md:space-x-8 rounded-md md:mt-0 md:font-medium">
             {navLinks.map((navItems, index) => {
               return (
-                <li
-                  key={index}
-                  className="block text-xl cursor-pointer py-2 px-4 "
-                >
-                  <Link className=" active:text-[red]" to={navItems.path}>
+                <li key={index} className="block text-xl">
+                  <NavLink
+                    className={({ isActive }) =>
+                      isActive
+                        ? "text-[blue] border-b-2 border-[blue] hover:bg-blue-100 font-medium py-2 px-4"
+                        : "text-black hover:bg-blue-100 font-medium rounded-lg py-2 px-4"
+                    }
+                    // className="hover:bg-blue-100 font-medium rounded-lg py-2 px-4 "
+                    to={navItems.path}
+                  >
                     {navItems.name}
-                  </Link>
+                  </NavLink>
                 </li>
               );
             })}

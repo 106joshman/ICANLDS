@@ -6,11 +6,11 @@ import Ipc from "../assets/Exco/AlestaWIlcox.jpg";
 import FinSec from "../assets/Exco/AdedejiOlumide.jpg";
 import Seun from "../assets/Exco/Seun.jpeg";
 import Technical from "../assets/Exco/Ifeanyi.jpg";
-import Exco2 from "../assets/Exco/Oduwaye.jpg";
-import Social from "../assets/Exco/Shola.jpg";
+import Oduwaye from "../assets/Exco/Oduwaye.jpg";
+import Olusola from "../assets/Exco/Shola.jpg";
 import Dvice from "../assets/Exco/Bukunola.jpg";
 import Membership from "../assets/Exco/Kikelomo.jpg";
-import Treasurer from "../assets/Exco/Martin.jpg";
+import Treasurer from "../assets/Exco/Mr. Ansaa.jpg";
 import Exco1 from "../assets/Exco/ChristopherEhiogie.jpg";
 import HeroImage from "../assets/eid.png";
 
@@ -44,7 +44,7 @@ const Excos = () => {
               />
 
               <p className="font-bold mb-1 text-black">Toyin Ogunlowo, FCA</p>
-              <p className="text-gray-500">Chairman</p>
+              <p className="text-[green]">Chairman</p>
             </div>
 
             <div className="mb-12">
@@ -59,7 +59,7 @@ const Excos = () => {
               <p className="font-bold mb-1 text-black">
                 Dr. Olumide Adedeji, FCA
               </p>
-              <p className="text-gray-500">Vice Chairman</p>
+              <p className="text-[green]">Vice Chairman</p>
             </div>
 
             <div className="mb-12">
@@ -73,7 +73,7 @@ const Excos = () => {
               <p className="font-bold mb-1 text-black">
                 Bukunola Akinmoladun, FCA
               </p>
-              <p className="text-gray-500">Deputy Vice-Chaiman</p>
+              <p className="text-[green]">Deputy Vice-Chaiman</p>
             </div>
             <div className="mb-12">
               <img
@@ -86,7 +86,7 @@ const Excos = () => {
                 {" "}
                 Dr. Martin Ikpehai, ACA
               </p>
-              <p className="text-gray-500">General Secretary</p>
+              <p className="text-[green]">General Secretary</p>
             </div>
 
             <div className="mb-12">
@@ -97,98 +97,98 @@ const Excos = () => {
                 style={{ maxWidth: "60%", height: 215 }}
                 // loading="lazy"
               />
-              <p className="font-bold mb-1 text-black"></p>
-              <p className="text-gray-500">Treasurer</p>
+              <p className="font-bold mb-1 text-black">Joshua Ansa, FCA</p>
+              <p className="text-[green]">Treasurer</p>
             </div>
 
             <div className="mb-12">
               <img
-                src={FinSec}
+                src='https://tecdn.b-cdn.net/img/new/avatars/2.webp'
                 className="rounded-full mx-auto shadow-lg mb-4"
                 alt=""
                 style={{ maxWidth: "60%", height: 215 }}
                 // loading="lazy"
               />
               <p className="font-bold mb-1 text-black">XYZ ABC, FCA</p>
-              <p className="text-gray-500">Financial Secretary</p>
+              <p className="text-[green]">Financial Secretary</p>
             </div>
 
             <div className="mb-12">
               <img
-                src={Technical}
+                src='https://tecdn.b-cdn.net/img/new/avatars/2.webp'
                 className="rounded-full mx-auto shadow-lg mb-4"
                 alt=""
                 style={{ maxWidth: "60%", height: 215 }}
                 // loading="lazy"
               />
-              <p className="font-bold mb-1 text-black">Ifeanyi Ugbomode, ACA</p>
-              <p className="text-gray-500">Technical Secretary</p>
-            </div>
-
-            <div className="mb-12">
-              <img
-                src={Membership}
-                className="rounded-full mx-auto items-center shadow-lg mb-4"
-                alt=""
-                style={{ maxWidth: "60%", height: 215 }}
-                // loading="lazy"
-              />
-              <p className="font-bold mb-1 text-black">Kikelomo Abikele, FCA</p>
-              <p className="text-gray-500">Membership Secretary</p>
-            </div>
-
-            <div className="mb-12">
-              <img
-                src={Social}
-                className="rounded-full mx-auto shadow-lg mb-4"
-                alt=""
-                style={{ maxWidth: "60%", height: 215 }}
-                // loading="lazy"
-              />
-              <p className="font-bold mb-1 text-black">Olusola Adegbite, FCA</p>
-              <p className="text-gray-500">Social & Publicity Secretary</p>
-            </div>
-
-            <div className="mb-12">
-              <img
-                src={Seun}
-                className="rounded-full mx-auto shadow-lg mb-4"
-                alt=""
-                style={{ maxWidth: "60%", height: 215 }}
-                // loading="lazy"
-              />
-              <p className="font-bold mb-1 text-black">
-                Oluwaseun Ileola-Olaseni, FCA
-              </p>
-              <p className="text-gray-500">Asst. General Secretary</p>
-            </div>
-
-            <div className="mb-12">
-              <img
-                src={Exco2}
-                className="rounded-full mx-auto shadow-lg mb-4"
-                alt=""
-                style={{ maxWidth: "60%", height: 215 }}
-                // loading="lazy"
-              />
-              <p className="font-bold mb-1 text-black">
-                Oluwafunmilayo Oduwaye, FCA
-              </p>
-              <p className="text-gray-500">EX- Officio - I</p>
+              <p className="font-bold mb-1 text-black">XYZ ABC, FCA</p>
+              <p className="text-[green]">Technical Secretary</p>
             </div>
 
             <div className="mb-12">
               <img
                 src={Exco1}
+                className="rounded-full mx-auto items-center shadow-lg mb-4"
+                alt=""
+                style={{ maxWidth: "60%", height: 215 }}
+                // loading="lazy"
+              />
+              <p className="font-bold mb-1 text-black">Christopher Ehiogie, FCA</p>
+              <p className="text-[green]">Membership Secretary</p>
+            </div>
+
+            <div className="mb-12">
+              <img
+                src="https://tecdn.b-cdn.net/img/new/avatars/2.webp"
+                className="rounded-full mx-auto shadow-lg mb-4"
+                alt=""
+                style={{ maxWidth: "60%", height: 215 }}
+                // loading="lazy"
+              />
+              <p className="font-bold mb-1 text-black">XYZ ABC, FCA</p>
+              <p className="text-[green]">Social & Publicity Secretary</p>
+            </div>
+
+            <div className="mb-12">
+              <img
+                src={Oduwaye}
                 className="rounded-full mx-auto shadow-lg mb-4"
                 alt=""
                 style={{ maxWidth: "60%", height: 215 }}
                 // loading="lazy"
               />
               <p className="font-bold mb-1 text-black">
-                Christopher Ehiogie, FCA
+              Oluwafunmilayo Oduwaye, FCA
               </p>
-              <p className="text-gray-500">EX-Officio - II</p>
+              <p className="text-[green]">Asst. General Secretary</p>
+            </div>
+
+            <div className="mb-12">
+              <img
+                src='https://tecdn.b-cdn.net/img/new/avatars/2.webp'
+                className="rounded-full mx-auto shadow-lg mb-4"
+                alt=""
+                style={{ maxWidth: "60%", height: 215 }}
+                // loading="lazy"
+              />
+              <p className="font-bold mb-1 text-black">
+              ABC XYZ , FCA
+              </p>
+              <p className="text-[green]">EX- Officio - I</p>
+            </div>
+
+            <div className="mb-12">
+              <img
+                src='https://tecdn.b-cdn.net/img/new/avatars/2.webp'
+                className="rounded-full mx-auto shadow-lg mb-4"
+                alt=""
+                style={{ maxWidth: "60%", height: 215 }}
+                // loading="lazy"
+              />
+              <p className="font-bold mb-1 text-black">
+                Eyo Eyo Odiong, ACA
+              </p>
+              <p className="text-[green]">EX-Officio - II</p>
             </div>
 
             <div className="mb-12">
@@ -199,8 +199,8 @@ const Excos = () => {
                 style={{ maxWidth: "60%" }}
                 // loading="lazy"
               />
-              <p className="font-bold mb-1 text-black">JAlesta Wilcox, FCA</p>
-              <p className="text-gray-500">Immediate Past Chairman (IPC)</p>
+              <p className="font-bold mb-1 text-black">Alesta Wilcox, FCA</p>
+              <p className="text-[green]">Immediate Past Chairman (IPC)</p>
             </div>
           </div>
         </section>

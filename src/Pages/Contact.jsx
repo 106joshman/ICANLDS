@@ -6,15 +6,15 @@ import { RiMapPin2Fill, RiMailFill } from "react-icons/ri";
 const Contact = () => {
   return (
     // <!-- Container for demo purpose -->
-    <div class="container pt-44 px-6 mx-auto">
+    <div class="cntainer pt-32 px-6 mx-auto">
       {/* <!-- Section: Design Block --> */}
       <section class="mb-32 text-gray-800">
         <div
-          class="relative overflow-hidden bg-no-repeat bg-cover h-[300px]"
+          class="relative overflow-hidden bg-no-repeat bg-cover bg-center h-[500px]"
           style={{
             backgroundImage:
               "url('https://mdbootstrap.com/img/new/textures/full/284.jpg')",
-            height: "300px",
+            height: "500px",
           }}
         >
           {" "}
@@ -25,9 +25,9 @@ const Contact = () => {
             Contact Us
           </h2>
         </div>
-        <div className="container">
+        <div className="sm:cntainer mx-auto">
           <div
-            class="block rounded-lg shadow-lg bg-white container mx-auto"
+            class="block rounded-lg shadow-lg bg-white px-4 cntainer mx-auto"
             style={{
               marginTop: "-100px",
               background: "hsla(0, 0%, 100%, 0.8)",

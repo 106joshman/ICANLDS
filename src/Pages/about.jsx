@@ -19,7 +19,7 @@ const About = () => {
             srcset=""
           />
         </div>
-        <div className="mx-auto container p-6">
+        <div className="mx-auto ontainer px-8">
           <div className="absolute top-[180px] md:top-[210px] textwhite lg:top-[270px] pr-6 lg:pr-10">
             <div className="flex flex-col lg:flex-row lg:gap-5 justify-between">
               <div className="left">

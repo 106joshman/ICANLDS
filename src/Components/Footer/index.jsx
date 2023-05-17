@@ -103,7 +103,7 @@ const Footer = () => {
         {/* </div> */}
         {/* </div> */}
         <div className="py-10 text-center md:text-left">
-          <div className="flex flex-col lg:grid lg:grid-cols-3 justify-between gap-10">
+          <div className="flex flex-col lg:grid grid-cols-2 justify-between gap-10">
             <div className="flex justify-start flex-col">
               <div className="flex items-center">
                 <Logo />
@@ -114,7 +114,7 @@ const Footer = () => {
               </p>
             </div>
 
-            <div className="">
+            {/* <div className="">
               <h6 className="font-medium mb-2 uppercase flex justify-ceter md:justify-start">
                 How to Join icanlds
               </h6>
@@ -124,7 +124,7 @@ const Footer = () => {
                 Society, to continue kindly click on the membership button in
                 the top bar.
               </p>
-            </div>
+            </div> */}
 
             <div className="">
               <h6 className="uppercase font-semibold mb-4 flex justify-ceter md:justify-start">
@@ -187,6 +187,21 @@ const Footer = () => {
       </div>
       <div className="text-center left-0 absolute w-full p-4 bg-gray-200 text-black">
         <span>© Copyright ICANLDS 2023</span>
+        <div className="mt-1">
+          Designed and developed by{" "}
+          <span className="text-[blue] font-bold">
+            <a
+              href="https://wa.link/uws0lz"
+              target="_blank"
+              rel="noopener noreferrer"
+              title="Whatsapp link"
+              alt="Whatsapp link"
+              className=""
+            >
+              Blaq dev
+            </a>
+          </span>
+        </div>
       </div>
     </footer>
   );

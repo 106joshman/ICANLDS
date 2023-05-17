@@ -25,10 +25,6 @@ const MobileNav = ({ navLinks, isOpen, setOpen }) => {
                   activeclassname="active"
                   className="block text-lg cursor-pointer hover:bg-gray-700 py-4 px-4"
                   to={navItems.path}
-                  spy={true}
-                  smooth={true}
-                  offset={-70}
-                  duration={500}
                   onClick={() => setOpen(!isOpen)}
                 >
                   {navItems.name}

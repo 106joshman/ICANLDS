@@ -10,19 +10,18 @@ const Chairman = () => {
   }, []);
   return (
     <>
-      <div className=" mx-auto container bg-[#fff]">
+      <div className=" mx-auto sm:container pt-32">
         {/* Chairman's Speech */}
-        <div className="flex pt-32 flex-col lg:h-[100v] lg:flex-row justify-between items-center p-6">
+        <div className="flex flex-col lg:flex-row justify-between gap-10 items-center">
           <div className="image" data-aos="zoom-in-up">
             <img
               src={ChairMan}
-              // src="https://mdbootstrap.com/img/new/avatars/5.jpg"
-              className="w-full md:w-35 lg:w-full m-auto h-96"
+              className="w-full md:w-35 lg:w-full m-auto h-"
               // loading="lazy"
               alt=""
               srcSet=""
             />
-            <p className="flex flex-col lg:left-0 -top-20 ml-2.5 w-[350px] text-white relative">
+            <p className="flex flex-col px-2 lg:left-0 -top-20 ml-2.5 w-[350px] text-white relative">
               <span className="text-3xl font-semibold">
                 Toyin Ogunlowo, FCA
               </span>
@@ -30,78 +29,56 @@ const Chairman = () => {
             </p>
           </div>
           <div
-            className="text lg:w-3/5"
+            className="text wfull px-8 md:w-3/4 mx-auto"
             data-aos="zoom-in-up"
             // data-aos-duration="2000"
           >
             <h3 className="text-3xl mb-4">
               Welcome to ICAN Lagos & District Society
             </h3>
-            <p className="text-justify mb-2.5" data-aos="fade-up">
-              My fellow exco members, permit me to once again congratulate you
-              for the opportunity given to you to serve the district at this
-              time. Make no mistake we are not just the only best to hold our
-              respective positions, our being leaders today is by sheer
-              providence, the will of God, and the pleasure of our colleagues.
-              The district is bigger than every one of us and the district will
-              outlive us just as we all came to meet it. Thus, what is required
-              of us is a total commitment to the course and advancement of the
-              district and the institute in general.
+
+            <p className="text-justify mb-2.5" data-aos="fade-down">
+              Toyin Ogunlowo Partner, Energy & Natural Resources Audit Group
+              KPMG in Nigeria
+            </p>
+            <p className="text-justify mb-2.5 " data-aos="fade-up">
+              Toyin is a Partner in the Energy & Natural Resources Audit
+              Division of KPMG Nigeria. She has more than 16 years working
+              experience in providing professional services to various clients.
+              She was the engagement Leader on the audits of indigenous and
+              multinational Energy and Natural Resources Companies. She has led
+              Joint Venture (JV) audits within the oil and gas sector which
+              comprised a review of the JV operations in line with the
+              individual Joint Operations Agreements between partners and was
+              able to provide evidential support to the JV partners for monetary
+              recoveries.
             </p>
             <p className="text-justify mb-2.5" data-aos="fade-down">
-              Our conduct and actions at all times should be guided by good
-              conscience, love, tolerance and friendliness. No one person is
-              right or wrong all the time and we must always remember to listen
-              to one another with open minds.
+              She was also an integral part of a Canadian Internal Controls over
+              Financial Reporting (CSOX) project carried out for an
+              International Oil Company in Nigeria. The company was assisted in
+              documenting their business processes and ensuring it met best
+              practice standards. Toyin has advised various clients on potential
+              improvements to processes & controls and has also worked with the
+              Ministry of Petroleum Resources on a special project to determine
+              government revenues from the oil and gas industry in Nigeria.
             </p>
             <p className="text-justify mb-2.5" data-aos="fade-up">
-              Your election into the cabinet at this time makes you crucial to
-              the success of my tenure. I will therefore ask you for three
-              things: <strong> support, more support, and total support</strong>
-              . I want to assure you all that I have no other agenda or
-              ambitions other than to take our district to the next level.
-              <strong> I will make it count by God's special grace</strong>.
+              She has worked in various capacities on various engagements - her
+              extensive oil and gas industry experience includes leading special
+              purpose engagements (capital markets transactions (Assurance),
+              contract reviews, business process reviews etc.) and other
+              Accounting/Financial Reporting related projects.
             </p>
-            <p className="text-justify mb-2.5" data-aos="fade-down">
-              Distinguished ladies and gentlemen, I want to thank all those who
-              made this event possible with the several donations, placed
-              advertisements, and congratulatory messages that enabled us to
-              fund this ceremony. I say a special thank you to the indefectible
-              planning committee members for time spent attending the planning
-              meeting twice every week for the last six weeks at personal cost
-              and inconvenience. Words cannot express my feelings; all I can say
-              is God bless you all. This is a testament to the fact that
-              anything we put our minds to do can be done no matter the
-              situation and obstacles.{" "}
-              <strong> Failure is not an option.</strong>
-            </p>
-            <p className="text-justify mb-2.5" data-aos="fade-up">
-              I want to also thank my darling daughter{" "}
-              <strong> Jacqueline Wilcox </strong>for her support and various
-              contributions to the success of this event. I love you and I am
-              very proud of you, Jackic. It is because of you that I strive to
-              leave an untarnished legacy please sustain it in all your thoughts
-              and deeds.
-            </p>
-            <p className="text-justify mb-2.5" data-aos="fade-down">
-              Finally, I want to acknowledge publicly and the before you all the
-              great contributions of the unsung hero of my life, my mother{" "}
-              <strong> Late Madam Irene Wilcox (1927-2013)</strong> for her
-              sweat, resilience, sacrifices, discipline, and prayers that
-              unlocked all the potentials and virtues of hard work, dedication,
-              honesty, and passion for success which endeared you into honoring
-              me with this great leadership position. Though she has long gone
-              to rest with the Lord, her legacy still lives on and is being
-              rewarded. I, therefore, dedicate this exulted position to her
-              memory.
-            </p>
+            {/* <p className="text-justify mb-2.5" data-aos="fade-up"></p> */}
+            {/* <p className="text-justify mb-2.5" data-aos="fade-down"></p> */}
             <p className="text-justify mb-2.5">
               Once again, thank you all for coming, and thank you for your
               attention.
             </p>
-            <h5 className="flex flex-col font-bold" data-aos="fade-up">
-              <span>Alesta Wilcox, FCA</span>
-              <span>20th Chairman, ICANLDS</span>
+            <h5 className="flex flex-col font-bold mb-5" data-aos="fade-up">
+              <span>Toyin Ogunlowo, FCA</span>
+              <span>21st Chairman, ICANLDS</span>
             </h5>
           </div>
         </div>
